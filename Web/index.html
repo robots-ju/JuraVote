@@ -9,25 +9,38 @@
         <script src="js/uikit-icons.min.js"></script>
     </head>
     <body>
-        <nav class="uk-navbar-container uk-position-fixed uk-width-1-1"  uk-navbar>
-            <div class="uk-navbar-left">
-        
-                <ul class="uk-navbar-nav">
-                    <li class="uk-active"><a href="index.html">Accueil</a></li>
-                    <li><a href="Votations/votations.html">Votations</a></li>
-                    <li><a href="Élections/élections.html">Élections</a></li>
-                    <li><a href="Résultats/résultats.html">Résultats</a></li>
-                    <li><a href="Présentations/présentations.html">Présentation</a></li>
-                </ul>
-        
+        <header>
+            <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+                <nav class="uk-navbar-container" uk-navbar>
+            
+                    <div class="uk-navbar-left">
+                
+                        <ul class="uk-navbar-nav">
+                            <li><a href="../index.html">Accueil</a></li>
+                            <li class="uk-active"><a href="../Votations/votations.html">Votations</a></li>
+                            <li><a href="../Élections/élections.html">Élections</a></li>
+                            <li><a href="../Résultats/résultats.html">Résultats</a></li>
+                            <li><a href="../Présentations/présentations.html">Présentation</a></li>
+                        </ul>
+                
+                    </div>
+                
+                    <div class="uk-navbar-right">
+                
+                        <ul class="uk-navbar-nav">
+                            <div class="uk-navbar-item">
+                                <form action="javascript:void(0)">
+                                    <input class="uk-input uk-form-width-small" type="text" placeholder="Rechercher...">
+                                    <button class="uk-button uk-button-default">🔎</button>
+                                </form>
+                            </div>
+                        </ul>
+                
+                    </div>
+                
+                </nav>
             </div>
-            <div class="uk-navbar-item uk-navbar-right">
-                <form action="javascript:void(0)">
-                    <input class="uk-input uk-form-width-small" type="text" placeholder="🔎">
-                    <button class="uk-button uk-button-default">Rechercher</button>
-                </form>
-            </div>
-        </nav>
+        </header> 
 
         <section>
             <div>
