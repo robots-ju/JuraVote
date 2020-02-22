@@ -1,0 +1,12 @@
+.accueil {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    height: 300px;
+    background-color: rgb(54, 54, 54);
+}
+
+.logo {
+    padding: 10px, 10px, 10px, 10px;
+    height: 100%;
+}
