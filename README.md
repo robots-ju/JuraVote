@@ -6,4 +6,4 @@ Cette plateforme propose des informations sur les thèmes suivants:
  * Votations
  * Élections
  * Résultats en direct
- * Présentation des différents parties politiques Suisses
+ * Présentation des différents partis politiques Suisses
