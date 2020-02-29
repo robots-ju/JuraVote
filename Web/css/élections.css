@@ -1,8 +1,11 @@
 .titre {
-    color: #D20603;
+    color: #990000;
     text-align: center;
 }
 
-.photo-ronde {
-    border-radius: 50%;
+.cards {
+    height: 100%;
+    color: white;
+    background-color: #990000  ;
+    text-decoration: none;
 }

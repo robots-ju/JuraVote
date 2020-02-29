@@ -15,7 +15,8 @@ a {
 }
 
 .cards:hover {
-    box-shadow: 0px 10px 20px #666666;
+    opacity: 75%;
+    transition: 500ms;
 }
 
 .div_image {
