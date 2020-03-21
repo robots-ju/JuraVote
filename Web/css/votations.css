@@ -45,6 +45,10 @@ a {
     color: rgba(255,255,255,.5);
 }
 
-.uk-navbar-dropdown-nav > li > a :hover{
+.uk-navbar-dropdown-nav > li > a:hover{
     color: rgba(255,255,255,.7);
+}
+
+.uk-navbar-dropdown-nav > li.uk-active > a {
+    color: #fff;
 }
