@@ -4,7 +4,7 @@ a {
 
 .titre {
     color: #D20603;
-    text-align: left;
+    text-align: center;
 }
 
 .cards {
@@ -52,3 +52,4 @@ a {
 .uk-navbar-dropdown-nav > li.uk-active > a {
     color: #fff;
 }
+

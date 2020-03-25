@@ -4,7 +4,7 @@ a {
 
 .titre {
     color: #D20603;
-    text-align: center;
+    text-align: left;
 }
 
 .cards {
@@ -20,7 +20,7 @@ a {
 }
 
 .div_image {
-    max-height: 300px;
+    max-height: 700px;
     overflow: hidden;
     display: flex;
     justify-content: center; 
@@ -28,6 +28,7 @@ a {
 
 .image {
     width:100%;
+    height: 300px;
     margin: auto;
 }
 
