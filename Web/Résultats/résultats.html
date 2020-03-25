@@ -2,30 +2,62 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>JuraVote | Élections</title>
     <link rel="stylesheet" href="../css/uikit.min.css" />
     <script src="../js/uikit.min.js"></script>
     <script src="../js/uikit-icons.min.js"></script>
+    <link rel="stylesheet" href="../css/resultats.css">
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
-    <nav class="uk-navbar-container uk-position-fixed uk-width-1-1"  uk-navbar>
-        <div class="uk-navbar-left">
+    <header>
+        <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+            <nav class="navbar uk-navbar-container uk-light" uk-navbar>
     
-            <ul class="uk-navbar-nav">
-                <li class="uk-active"><a href="../index.html">Accueil</a></li>
-                <li><a href="../Votations/federales.html">Votations</a></li>
-                <li><a href="../Élections/élections.html">Élections</a></li>
-                <li><a href="../Résultats/résultats.html">Résultats</a></li>
-                <li><a href="../Présentations/présentations.html">Présentation</a></li>
-            </ul>
     
+                <div class="uk-navbar-left">
+                    <ul class="uk-navbar-nav">
+                        <li><a href="../index.html">Accueil</a></li>
+                        <li>
+                            <a href="../Votations/federales.html">Votations</a>
+                            <div class="uk-navbar-dropdown" style="background-color: #D20603;">
+                                <ul class="uk-nav uk-navbar-dropdown-nav ">
+                                    <li class="uk-active"><a href="../Votations/federales.html">Fédérales</a></li>
+                                    <li><a href="../Votations/cantonales.html">Cantonales</a></li>
+                                    <li><a href="../Votations/cantonales.html">Communales</a></li>
+                                </ul>
+                            </div>
+                        
+                        </li>
+                        <li>
+                            <a href="../Elections/federales.html">Elections</a>
+                            <div class="uk-navbar-dropdown" style="background-color: #D20603;">
+                                <ul class="uk-nav uk-navbar-dropdown-nav ">
+                                    <li class="uk-active"><a href="../Elections/federales.html">Fédérales</a></li>
+                                    <li><a href="../Elections/cantonales.html">Cantonales</a></li>
+                                    <li><a href="../Elections/communales.html">Communales</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="../Résultats/résultats.html">Résultats</a></li>
+                        <li><a href="../Présentations/présentations.html">Présentation</a></li>
+                    </ul>
+                </div>
+            
+                <div class="uk-navbar-right">
+                    <ul class="uk-navbar-nav">
+                        <div class="uk-navbar-item">
+                            <form action="javascript:void(0)">
+                                <input class="uk-input uk-form-width-small" type="text" placeholder="Rechercher...">
+                                <button class="uk-button uk-button-default">🔎</button>
+                            </form>
+                        </div>
+                    </ul>
+                </div>
+            
+                
+            </nav>
         </div>
-        <div class="uk-navbar-item uk-navbar-right">
-            <form action="javascript:void(0)">
-                <input class="uk-input uk-form-width-small" type="text" placeholder="🔎">
-                <button class="uk-button uk-button-default">Rechercher</button>
-            </form>
-        </div>
-    </nav>
+    </header>
 </body>
 </html>
