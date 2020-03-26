@@ -18,3 +18,7 @@
 .description h2, .description p {
     color: white;
 }
+
+.twitter-timeline{
+    height:100px;
+}
