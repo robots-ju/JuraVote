@@ -1,5 +1,5 @@
 .entete {
-    background-color: #6D7275;
+    
     display: flex;
     flex-direction: row;
     padding: 2%;
@@ -16,7 +16,7 @@
 }
 
 .description h2, .description p {
-    color: white;
+    color: black;
 }
 
 .twitter-timeline{
