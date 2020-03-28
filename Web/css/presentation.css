@@ -2,6 +2,10 @@ a {
     text-decoration: none !important;
 }
 
+.imageParti{
+    height:80px;
+}
+
 .titre {
     color: #990000;
     text-align: center;
