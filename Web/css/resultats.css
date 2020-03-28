@@ -7,6 +7,26 @@ a {
     text-align: center;
 }
 
+.uk-card-title{
+    color: black;
+}
+
+.uk-card{
+    width:50%;
+    color: #6D7275;
+}
+
+.uk-text-meta {
+    color: black;
+}
+
+.uk-card-body{
+    color: white;
+}
+
+.uk-button-text{
+    color: white;
+}
 .cards {
     height: 100%;
     color: white;
