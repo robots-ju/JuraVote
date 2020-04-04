@@ -11,8 +11,11 @@
 .active {
     background-color: #990000;
 }
-
 .navbar {
     background-color: #D20603 !important;
     box-shadow: 0px 0px 20px #000000;
+}
+.navbar-iframe {
+    display: block;
+    width: 100%;
 }
