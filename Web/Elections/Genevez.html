@@ -1,118 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="shortcut icon" href="../img/Logo/JuraVote.png" />
-    <title>JuraVote | Elections communales</title>
-    <link rel="stylesheet" href="../css/uikit.min.css" />
-    <script src="../js/uikit.min.js"></script>
-    <script src="../js/uikit-icons.min.js"></script>
-    <link rel="stylesheet" href="../css/resultats.css">
-    <link rel="stylesheet" href="../css/main.css">
-</head>
-<body>
-    <header>
-        <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
-            <nav class="navbar uk-navbar-container uk-light" uk-navbar>
-
-                                                                                                    
-                <div class="uk-navbar-left">
-                    <ul class="uk-navbar-nav">
-                        <li><a href="../index.html">Accueil</a></li>
-                        <li>
-                            <a href="../Votations/federales.html">Votations</a>
-                            <div class="uk-navbar-dropdown" style="background-color: #D20603;">
-                                <ul class="uk-nav uk-navbar-dropdown-nav ">
-                                    <li class="uk-active"><a href="../Votations/federales.html">Fédérales</a></li>
-                                    <li><a href="../Votations/cantonales.html">Cantonales</a></li>
-                                    <li><a href="../Votations/cantonales.html">Communales</a></li>
-                                </ul>
-                            </div>
-                        
-                        </li>
-                        <li>
-                            <a href="../Elections/federales.html">Elections</a>
-                            <div class="uk-navbar-dropdown" style="background-color: #D20603;">
-                                <ul class="uk-nav uk-navbar-dropdown-nav ">
-                                    <li class="uk-active"><a href="../Elections/federales.html">Fédérales</a></li>
-                                    <li><a href="../Elections/cantonales.html">Cantonales</a></li>
-                                    <li><a href="../Elections/communales.html">Communales</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li><a href="../Résultats/résultats.html">Résultats</a></li>
-                        <li>
-                            <a href="../Présentations/présentations.html">Présentations</a>
-                            <div class="uk-navbar-dropdown" style="background-color: #D20603;">
-                                <ul class="uk-nav uk-navbar-dropdown-nav ">
-                                    <li class="uk-active"><a href="../Présentations/présentations.html">Fédérales</a></li>
-                                    <li><a href="../Présentations/présentations cantonales.html">Cantonales</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li><a href="../Contact/contact.html">Contact</a></li>
-                    </ul>
-                </div>
-            
-                <div class="uk-navbar-right">
-                    <ul class="uk-navbar-nav">
-                        <div class="uk-navbar-item">
-                            <form action="javascript:void(0)">
-                                <input class="uk-input uk-form-width-small" type="text" placeholder="Rechercher...">
-                                <button class="uk-button uk-button-default">🔎</button>
-                            </form>
-                        </div>
-                    </ul>
-                </div>
-            
-                
-            </nav>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="../img/Logo/JuraVote.png" />
+        <title>JuraVote | Elections communales</title>
+        <link rel="stylesheet" href="../css/uikit.min.css" />
+        <script src="../js/uikit.min.js"></script>
+        <script src="../js/uikit-icons.min.js"></script>
+        <link rel="stylesheet" href="../css/resultats.css">
+        <link rel="stylesheet" href="../css/main.css">
+    </head>
+    <body>
+        <div style="height: 80px;">
+            <iframe src="../Navigation/navbar.html?active=Elections" id="navbar-iframe"></iframe>
         </div>
-    </header>
-    <main>
-        <section style="padding: 2%">
-            <h2 class="uk-heading-large titre roboto">Genevez</h2>
-            <hr>
-            <h3>2 candidats se sont présentés pour l'élection au Conseil communal des Genevez qui a lieu le 17 mai 2020 !</h3>
-            <br></br>
-            <div class="uk-card uk-card-default uk-width-1-2@m uk-column-1-2">
-                <div class="uk-card-header"style="background-color: #C0C0C0;">
-                    <div class="uk-grid-small uk-flex-middle" uk-grid>
-                        <div class="uk-width-auto">
-                            <img class="uk-border-circle" width="40" height="40" src="candidats/unknown.png">
-                        </div>
-                        <div class="uk-width-expand">
-                            <h3 class="uk-card-title uk-margin-remove-bottom">Laetitia Humair</h3>
-                            <p class="uk-text-meta uk-margin-remove-top">Sans parti</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="uk-card-body"style="background-color: #990000;">
-                    <p>XX ans | métier</p>
-                </div>
-                <div class="uk-card-footer"style="background-color: #990000;">
-                    <a href="#" class="uk-button uk-button-text">Plus d'infos</a>
-                </div>
-                <div class="uk-card-header"style="background-color: #C0C0C0;">
-                    <div class="uk-grid-small uk-flex-middle" uk-grid>
-                        <div class="uk-width-auto">
-                            <img class="uk-border-circle" width="40" height="40" src="candidats/unknown.png">
-                        </div>
-                        <div class="uk-width-expand">
-                            <h3 class="uk-card-title uk-margin-remove-bottom">Gérald Rebetez</h3>
-                            <p class="uk-text-meta uk-margin-remove-top">Sans parti</p>
+        <main>
+            <section style="padding: 2%">
+                <h2 class="uk-heading-large titre roboto">Genevez</h2>
+                <hr>
+                <h3>2 candidats se sont présentés pour l'élection au Conseil communal des Genevez qui a lieu le 17 mai 2020 !</h3>
+                <br></br>
+                <div class="uk-card uk-card-default uk-width-1-2@m uk-column-1-2">
+                    <div class="uk-card-header"style="background-color: #C0C0C0;">
+                        <div class="uk-grid-small uk-flex-middle" uk-grid>
+                            <div class="uk-width-auto">
+                                <img class="uk-border-circle" width="40" height="40" src="candidats/unknown.png">
+                            </div>
+                            <div class="uk-width-expand">
+                                <h3 class="uk-card-title uk-margin-remove-bottom">Laetitia Humair</h3>
+                                <p class="uk-text-meta uk-margin-remove-top">Sans parti</p>
+                            </div>
                         </div>
                     </div>
+                    <div class="uk-card-body"style="background-color: #990000;">
+                        <p>XX ans | métier</p>
+                    </div>
+                    <div class="uk-card-footer"style="background-color: #990000;">
+                        <a href="#" class="uk-button uk-button-text">Plus d'infos</a>
+                    </div>
+                    <div class="uk-card-header"style="background-color: #C0C0C0;">
+                        <div class="uk-grid-small uk-flex-middle" uk-grid>
+                            <div class="uk-width-auto">
+                                <img class="uk-border-circle" width="40" height="40" src="candidats/unknown.png">
+                            </div>
+                            <div class="uk-width-expand">
+                                <h3 class="uk-card-title uk-margin-remove-bottom">Gérald Rebetez</h3>
+                                <p class="uk-text-meta uk-margin-remove-top">Sans parti</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-card-body"style="background-color: #990000;">
+                        <p>XX ans | métier</p>
+                    </div>
+                    <div class="uk-card-footer"style="background-color: #990000;">
+                        <a href="#" class="uk-button uk-button-text">Plus d'infos</a>
+                    </div>
                 </div>
-                <div class="uk-card-body"style="background-color: #990000;">
-                    <p>XX ans | métier</p>
-                </div>
-                <div class="uk-card-footer"style="background-color: #990000;">
-                    <a href="#" class="uk-button uk-button-text">Plus d'infos</a>
-                </div>
-            </div>
-            
-        </section>
-    </main>
-</body>
+                
+            </section>
+        </main>
+    </body>
 </html>

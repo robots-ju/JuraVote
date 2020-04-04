@@ -1,4 +1,4 @@
-<html>
+<html style="background-color: #00000000">
     <head>
             <meta charset="UTF-8">
             <link rel="shortcut icon" href="../img/Logo/JuraVote.png" />
@@ -6,22 +6,46 @@
             <script src="../js/uikit.min.js"></script>
             <script src="../js/uikit-icons.min.js"></script>
             <link rel="stylesheet" href="../css/main.css">
-            <link rel="stylesheet" href="../css/navbar.css">
             <base target="_parent">
     </head>
     <body>
         <header>
             <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
                 <nav class="navbar uk-navbar-container uk-light uk-navbar" uk-navbar>
-
-
                     <div class="uk-navbar-left">
                         <ul class="uk-navbar-nav">
-                            <li><a href="../index.html">Accueil</a></li>
-                            <li class="uk-active"><a href="../Votations/federales.html">Votations</a></li>
-                            <li><a href="../Élections/élections.html">Élections</a></li>
-                            <li><a href="../Résultats/résultats.html">Résultats</a></li>
-                            <li><a href="../Présentations/présentations.html">Présentation</a></li>
+                            <li id="Accueil"><a href="../index.html">Accueil</a></li>
+                            <li id="Votations">
+                                <a href="../Votations/federales.html">Votations</a>
+                                <div class="uk-navbar-dropdown" style="background-color: #D20603;">
+                                    <ul class="uk-nav uk-navbar-dropdown-nav ">
+                                        <li class="uk-active"><a href="../Votations/federales.html">F&eacute;d&eacute;rales</a></li>
+                                        <li><a href="../Votations/cantonales.html">Cantonales</a></li>
+                                        <li><a href="../Votations/communales.html">Communales</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li id="Elections">
+                                <a href="../Elections/federales.html">&Eacute;lections</a>
+                                <div class="uk-navbar-dropdown" style="background-color: #D20603;">
+                                    <ul class="uk-nav uk-navbar-dropdown-nav ">
+                                        <li class="uk-active"><a href="../Elections/federales.html">F&eacute;d&eacute;rales</a></li>
+                                        <li><a href="../Elections/cantonales.html">Cantonales</a></li>
+                                        <li><a href="../Elections/communales.html">Communales</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li id="Resultats"><a href="../Resultats/resultats.html">R&eacute;sultats</a></li>
+                            <li id="Presentations">
+                                <a href="../Presentations/presentations.html">Pr&eacute;sentation</a>
+                                <div class="uk-navbar-dropdown" style="background-color: #D20603;">
+                                    <ul class="uk-nav uk-navbar-dropdown-nav ">
+                                        <li class="uk-active"><a href="../Presentations/presentations.html">F&eacute;d&eacute;rales</a></li>
+                                        <li><a href="../Presentations/presentations cantonales.html">Cantonales</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li id="Contact"><a href="../Contact/contact.html">Contact</a></li>
                         </ul>
                     </div>
                 
@@ -38,6 +62,13 @@
                 </nav>
             </div>
         </header>
+        <script>
+            document.location.search.slice(1).split("&").forEach(function(param){
+                if(param.split("=")[0]==="active"){
+                    document.getElementById(param.split("=")[1]).className="uk-active active";
+                }
+            });
+        </script>
     </body>
 </html>
         

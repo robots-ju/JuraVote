@@ -11,59 +11,12 @@
     <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
-    <header>
-        <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
-            <nav class="navbar uk-navbar-container uk-light" uk-navbar>                                                                                                  
-                <div class="uk-navbar-left">
-                    <ul class="uk-navbar-nav">
-                        <li><a href="../index.html">Accueil</a></li>
-                        <li>
-                            <a href="../Votations/federales.html">Votations</a>
-                            <div class="uk-navbar-dropdown" style="background-color: #D20603;">
-                                <ul class="uk-nav uk-navbar-dropdown-nav ">
-                                    <li class="uk-active"><a href="../Votations/federales.html">Fédérales</a></li>
-                                    <li><a href="../Votations/cantonales.html">Cantonales</a></li>
-                                    <li><a href="../Votations/communales.html">Communales</a></li>
-                                </ul>
-                            </div>          
-                        </li>
-                        <li>
-                            <a href="../Elections/federales.html">Elections</a>
-                            <div class="uk-navbar-dropdown" style="background-color: #D20603;">
-                                <ul class="uk-nav uk-navbar-dropdown-nav ">
-                                    <li class="uk-active"><a href="../Elections/federales.html">Fédérales</a></li>
-                                    <li><a href="../Elections/cantonales.html">Cantonales</a></li>
-                                    <li><a href="../Elections/communales.html">Communales</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li><a href="../Résultats/résultats.html">Résultats</a></li>
-                        <li><a href="../Présentations/présentations.html">Présentations</a>
-                            <div class="uk-navbar-dropdown" style="background-color: #D20603;">
-                                <ul class="uk-nav uk-navbar-dropdown-nav ">
-                                    <li class="uk-active"><a href="../Présentations/présentations.html">Fédérales</a></li>
-                                    <li><a href="../Présentations/présentations cantonales.html">Cantonales</a></li>
-                                </ul>
-                            </div></li>
-                        <li><a href="../Contact/contact.html">Contact</a></li>
-                    </ul>
-                </div>     
-                <div class="uk-navbar-right">
-                    <ul class="uk-navbar-nav">
-                        <div class="uk-navbar-item">
-                            <form action="javascript:void(0)">
-                                <input class="uk-input uk-form-width-small" type="text" placeholder="Rechercher...">
-                                <button class="uk-button uk-button-default">🔎</button>
-                            </form>
-                        </div>
-                    </ul>
-                </div>   
-            </nav>
-        </div>
-    </header>
+    <div style="height: 80px;">
+        <iframe src="../Navigation/navbar.html?active=Presentations" id="navbar-iframe"></iframe>
+    </div>
     <main>
         <section style="padding: 2%">
-            <h2 class="uk-heading-large titre roboto">Présentation des partis cantonaux </h2>
+            <h2 class="uk-heading-large titre roboto">Présentation des partis fédéraux </h2>
             <hr>
             <br></br>
             <div class="uk-card uk-card-default uk-width-1-2@m uk-column-1-2">

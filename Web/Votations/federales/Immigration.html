@@ -1,108 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="shortcut icon" href="../../img/Logo/JuraVote.png"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>JuraVote | Votations fédérales</title>
-    <link rel="stylesheet" href="../../css/uikit.min.css"/>
-    <script src="../../js/uikit.min.js"></script>
-    <script src="../../js/uikit-icons.min.js"></script>
-    <link rel="stylesheet" href="../../css/votationsfederales.css">
-    <link rel="stylesheet" href="../../css/main.css">
-    <link rel="stylesheet" href="../../css/votation.css">
-</head>
-<body>
-<header>
-    <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
-        <nav class="navbar uk-navbar-container uk-light" uk-navbar>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="../../img/Logo/JuraVote.png"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>JuraVote | Votations fédérales</title>
+        <link rel="stylesheet" href="../../css/uikit.min.css"/>
+        <script src="../../js/uikit.min.js"></script>
+        <script src="../../js/uikit-icons.min.js"></script>
+        <link rel="stylesheet" href="../../css/votationsfederales.css">
+        <link rel="stylesheet" href="../../css/main.css">
+        <link rel="stylesheet" href="../../css/votation.css">
+    </head>
+    <body>
+        <div style="height: 80px;">
+            <iframe src="../../Navigation/navbar.html?active=Votations" id="navbar-iframe"></iframe>
+        </div>
+        <main>
+            <h1 class="titre">Initiative populaire du 31 août 2018 «Pour une immigration modérée (initiative de
+                limitation)»</h1>
+            <hr>
+            <div class="contenu">
+                <img class="image-presentation" src="../../img/Limitation.jpg" alt="image de la votation">
+                <h2 class="titre-section">Descripiton</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi, assumenda beatae eaque et ex
+                    expedita explicabo ipsum labore libero magni molestiae nulla numquam perspiciatis quaerat quam recusandae
+                    similique sint.
+                </p>
+                <p>Earum fugit itaque iusto maxime quas repellendus rerum vero voluptate? Accusantium aut commodi dolorem,
+                    eaque eius et harum labore laboriosam laudantium libero nam nemo nisi nulla, numquam quae quod sunt?
+                </p>
+                <p>Consequuntur iusto, quas? In, nemo, quia. Ab ad amet, aut corporis cumque deleniti eveniet illo illum ipsa
+                    laudantium non nostrum perferendis possimus quam, quibusdam repellat sed tempora totam velit voluptates!
+                </p>
 
-
-            <div class="uk-navbar-left">
-                <ul class="uk-navbar-nav">
-                    <li><a href="../../index.html">Accueil</a></li>
-                    <li>
-                        <a href="../federales.html">Votations</a>
-                        <div class="uk-navbar-dropdown" style="background-color: #D20603;">
-                            <ul class="uk-nav uk-navbar-dropdown-nav ">
-                                <li class="uk-active"><a href="../federales.html">Fédérales</a></li>
-                                <li><a href="../cantonales.html">Cantonales</a></li>
-                                <li><a href="../cantonales.html">Communales</a></li>
-                            </ul>
-                        </div>
-
-                    </li>
-                    <li>
-                        <a href="../../Elections/federales.html">Elections</a>
-                        <div class="uk-navbar-dropdown" style="background-color: #D20603;">
-                            <ul class="uk-nav uk-navbar-dropdown-nav ">
-                                <li class="uk-active"><a href="../../Elections/federales.html">Fédérales</a></li>
-                                <li><a href="../../Elections/cantonales.html">Cantonales</a></li>
-                                <li><a href="../../Elections/communales.html">Communales</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li><a href="../../Résultats/résultats.html">Résultats</a></li>
-                    <li><a href="../../Présentations/présentations.html">Présentation</a></li>
-                    <li><a href="../../Contact/contact.html">Contact</a></li>
-                </ul>
-            </div>
-
-            <div class="uk-navbar-right">
-                <ul class="uk-navbar-nav">
-                    <div class="uk-navbar-item">
-                        <form action="javascript:void(0)">
-                            <input class="uk-input uk-form-width-small" type="text" placeholder="Rechercher...">
-                            <button class="uk-button uk-button-default">🔎</button>
-                        </form>
+                <div class="uk-card carte-pour">
+                    <div class="uk-card-header">
+                        <h3 class="uk-card-title">✔ Argumenation Pour ✔</h3>
                     </div>
-                </ul>
+                    <div class="uk-card-body">
+                        <ul>
+                            <li>Il fait beau</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="uk-card carte-contre">
+                    <div class="uk-card-header">
+                        <h3 class="uk-card-title">❌ Argumenation Contre ❌</h3>
+                    </div>
+                    <div class="uk-card-body">
+                        <ul>
+                            <li>Il fait froid</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
 
-
-        </nav>
-    </div>
-</header>
-<main>
-    <h1 class="titre">Initiative populaire du 31 août 2018 «Pour une immigration modérée (initiative de
-        limitation)»</h1>
-    <hr>
-    <div class="contenu">
-        <img class="image-presentation" src="../../img/Limitation.jpg" alt="image de la votation">
-        <h2 class="titre-section">Descripiton</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi, assumenda beatae eaque et ex
-            expedita explicabo ipsum labore libero magni molestiae nulla numquam perspiciatis quaerat quam recusandae
-            similique sint.
-        </p>
-        <p>Earum fugit itaque iusto maxime quas repellendus rerum vero voluptate? Accusantium aut commodi dolorem,
-            eaque eius et harum labore laboriosam laudantium libero nam nemo nisi nulla, numquam quae quod sunt?
-        </p>
-        <p>Consequuntur iusto, quas? In, nemo, quia. Ab ad amet, aut corporis cumque deleniti eveniet illo illum ipsa
-            laudantium non nostrum perferendis possimus quam, quibusdam repellat sed tempora totam velit voluptates!
-        </p>
-
-        <div class="uk-card carte-pour">
-            <div class="uk-card-header">
-                <h3 class="uk-card-title">✔ Argumenation Pour ✔</h3>
-            </div>
-            <div class="uk-card-body">
-                <ul>
-                    <li>Il fait beau</li>
-                </ul>
-            </div>
-        </div>
-        <div class="uk-card carte-contre">
-            <div class="uk-card-header">
-                <h3 class="uk-card-title">❌ Argumenation Contre ❌</h3>
-            </div>
-            <div class="uk-card-body">
-                <ul>
-                    <li>Il fait froid</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-</main>
-</body>
+        </main>
+    </body>
 </html>

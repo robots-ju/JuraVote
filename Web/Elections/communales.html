@@ -1,153 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="shortcut icon" href="../img/Logo/JuraVote.png" />
-    <title>JuraVote | Elections communales</title>
-    <link rel="stylesheet" href="../css/uikit.min.css" />
-    <script src="../js/uikit.min.js"></script>
-    <script src="../js/uikit-icons.min.js"></script>
-    <link rel="stylesheet" href="../css/electionscommunales.css">
-    <link rel="stylesheet" href="../css/main.css">
-</head>
-<body>
-    <header>
-        <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
-            <nav class="navbar uk-navbar-container uk-light" uk-navbar>
-    
-    
-                <div class="uk-navbar-left">
-                    <ul class="uk-navbar-nav">
-                        <li><a href="../index.html">Accueil</a></li>
-                        <li>
-                            <a href="../Votations/federales.html">Votations</a>
-                            <div class="uk-navbar-dropdown" style="background-color: #D20603;">
-                                <ul class="uk-nav uk-navbar-dropdown-nav ">
-                                    <li class="uk-active"><a href="../Votations/federales.html">Fédérales</a></li>
-                                    <li><a href="../Votations/cantonales.html">Cantonales</a></li>
-                                    <li><a href="../Votations/communales.html">Communales</a></li>
-                                </ul>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="../img/Logo/JuraVote.png" />
+        <title>JuraVote | Elections communales</title>
+        <link rel="stylesheet" href="../css/uikit.min.css" />
+        <script src="../js/uikit.min.js"></script>
+        <script src="../js/uikit-icons.min.js"></script>
+        <link rel="stylesheet" href="../css/electionscommunales.css">
+        <link rel="stylesheet" href="../css/main.css">
+    </head>
+    <body>
+        <div style="height: 80px;">
+            <iframe src="../Navigation/navbar.html?active=Elections" id="navbar-iframe"></iframe>
+        </div>
+        <main>
+            <section  style="padding: 2%">
+                <h2 class="uk-heading-large titre">Elections communales (Jura)</h2>
+                <hr>
+                <p class="uk-text-lead">Des élections ont lieu dans 5 communes jurassiennes le 17 mai 2020.</p>
+                <div class="uk-child-width-1-3@m uk-grid-small uk-grid" uk-grid>
+                    <div>
+                        <a href="Beurnevesin.html">
+                            <div class="uk-card-small uk-card-primary cards">
+                                <div class="uk-card-media-top div_image">
+                                    <img src="../img/Communes/Beurnevesin.jpg" alt="" class="image">
+                                </div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title roboto">Commune de Beurnev&eacute;sin</h3>
+                                    <p class="montserrat">2 élections</p>
+                                </div>
                             </div>
-                        
-                        </li>
-                        <li>
-                            <a href="../Elections/federales.html">Elections</a>
-                            <div class="uk-navbar-dropdown" style="background-color: #D20603;">
-                                <ul class="uk-nav uk-navbar-dropdown-nav ">
-                                    <li class="uk-active"><a href="../Elections/federales.html">Fédérales</a></li>
-                                    <li><a href="../Elections/cantonales.html">Cantonales</a></li>
-                                    <li><a href="../Elections/communales.html">Communales</a></li>
-                                </ul>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="Bonfol.html">
+
+                            <div class="uk-card-small uk-card-primary cards">
+                                <div class="uk-card-media-top div_image">
+                                    <img src="../img/Communes/Bonfol.jpg" alt="" class="image">
+                                </div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title roboto">Commune de Bonfol</h3>
+                                    <p class="montserrat">1 élection</p>
+                                </div>
                             </div>
-                        </li>
-                        <li><a href="../Résultats/résultats.html">Résultats</a></li>
-                        <li>
-                            <a href="../Présentations/présentations.html">Présentations</a>
-                            <div class="uk-navbar-dropdown" style="background-color: #D20603;">
-                                <ul class="uk-nav uk-navbar-dropdown-nav ">
-                                    <li class="uk-active"><a href="../Présentations/présentations.html">Fédérales</a></li>
-                                    <li><a href="../Présentations/présentations cantonales.html">Cantonales</a></li>
-                                </ul>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="Courtetelle.html">
+
+                            <div class="uk-card-small uk-card-primary cards">
+                                <div class="uk-card-media-top div_image">
+                                    <img src="../img/Communes/Courtetelle.jpg" alt="" class="image">
+                                </div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title roboto">Commune de Court&eacute;telle</h3>
+                                    <p class="montserrat">1 élection</p>
+                                </div>
                             </div>
-                        </li>
-                        <li><a href="../Contact/contact.html">Contact</a></li>
-                    </ul>
-                </div>
-            
-                <div class="uk-navbar-right">
-                    <ul class="uk-navbar-nav">
-                        <div class="uk-navbar-item">
-                            <form action="javascript:void(0)">
-                                <input class="uk-input uk-form-width-small" type="text" placeholder="Rechercher...">
-                                <button class="uk-button uk-button-default">🔎</button>
-                            </form>
-                        </div>
-                    </ul>
-                </div>
-            
+                        </a>
+                    </div>
+                    <div>
+                        <a href="Genevez.html">
+
+                            <div class="uk-card-small uk-card-primary cards">
+                                <div class="uk-card-media-top div_image">
+                                    <img src="../img/Communes/Genevez.jfif" alt="" class="image">
+                                </div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title roboto">Commune des Genevez</h3>
+                                    <p class="montserrat">1 élection</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="Lajoux.html">
+
+                            <div class="uk-card-small uk-card-primary cards">
+                                <div class="uk-card-media-top div_image">
+                                    <img src="../img/Communes/Lajoux.jpg" alt="" class="image">
+                                </div>
+                                <div class="uk-card-body">
+                                    <h3 class="uk-card-title roboto">Commune de Lajoux</h3>
+                                    <p class="montserrat">1 élection</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>   
+                    </div>
                 
-            </nav>
-        </div>
-    </header>
-
-<main>
-<section  style="padding: 2%">
-    <h2 class="uk-heading-large titre">Elections communales (Jura)</h2>
-    <hr>
-    <p class="uk-text-lead">Des élections ont lieu dans 5 communes jurassiennes le 17 mai 2020.</p>
-    <div class="uk-child-width-1-3@m uk-grid-small uk-grid" uk-grid>
-        <div>
-            <a href="Beurnevésin.html">
-                <div class="uk-card-small uk-card-primary cards">
-                    <div class="uk-card-media-top div_image">
-                        <img src="../img/Communes/Beurnevésin.jpg" alt="" class="image">
-                    </div>
-                    <div class="uk-card-body">
-                        <h3 class="uk-card-title roboto">Commune de Beurnevésin</h3>
-                        <p class="montserrat">2 élections</p>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div>
-            <a href="Bonfol.html">
-
-                <div class="uk-card-small uk-card-primary cards">
-                    <div class="uk-card-media-top div_image">
-                        <img src="../img/Communes/Bonfol.jpg" alt="" class="image">
-                    </div>
-                    <div class="uk-card-body">
-                        <h3 class="uk-card-title roboto">Commune de Bonfol</h3>
-                        <p class="montserrat">1 élection</p>
-                    </div>
-                </div>
-            </a>
-        </div>
-         <div>
-            <a href="Courtételle.html">
-
-                <div class="uk-card-small uk-card-primary cards">
-                    <div class="uk-card-media-top div_image">
-                        <img src="../img/Communes/Courtételle.jpg" alt="" class="image">
-                    </div>
-                    <div class="uk-card-body">
-                        <h3 class="uk-card-title roboto">Commune de Courtételle</h3>
-                        <p class="montserrat">1 élection</p>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div>
-            <a href="Genevez.html">
-
-                <div class="uk-card-small uk-card-primary cards">
-                    <div class="uk-card-media-top div_image">
-                        <img src="../img/Communes/Genevez.jfif" alt="" class="image">
-                    </div>
-                    <div class="uk-card-body">
-                        <h3 class="uk-card-title roboto">Commune des Genevez</h3>
-                        <p class="montserrat">1 élection</p>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div>
-            <a href="Lajoux.html">
-
-                <div class="uk-card-small uk-card-primary cards">
-                    <div class="uk-card-media-top div_image">
-                        <img src="../img/Communes/Lajoux.jpg" alt="" class="image">
-                    </div>
-                    <div class="uk-card-body">
-                        <h3 class="uk-card-title roboto">Commune de Lajoux</h3>
-                        <p class="montserrat">1 élection</p>
-                    </div>
-                </div>
-            </a>
-        </div>   
-        </div>
-    
-</section>
-</main>
-</body>
+            </section>
+        </main>
+    </body>
 </html>
