@@ -6,13 +6,11 @@
     height: 25%;
 }
 .logo {
-    height: 300px;
+    height: 225px;
 }
 
 .description {
-    margin-left: 2%;
-    padding-top: 2%;
-    padding-bottom: 2%;
+    margin-left: 2%; 
 }
 
 .description h2, .description p {
