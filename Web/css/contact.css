@@ -15,6 +15,7 @@ a {
 .uk-card-body{
     text-align: center;
     font-size: x-large;
+    padding: 46px 46px;
 }
 .uk-card{
     width:74%;
