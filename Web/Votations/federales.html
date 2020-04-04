@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="shortcut icon" href="../img/Logo/JuraVote.png" />
+    <link rel="shortcut icon" href="../img/Logo/JuraVote.png"/>
     <title>JuraVote | Votations fédérales</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/uikit.min.css"/>
@@ -11,6 +11,49 @@
     <script src="../js/uikit.min.js"></script>
     <script src="../js/uikit-icons.min.js"></script>
 </head>
+<<<<<<< HEAD
+<body>
+<header>
+    <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+        <nav class="navbar uk-navbar-container uk-light" uk-navbar>
+
+            <div class="uk-navbar-left">
+                <ul class="uk-navbar-nav">
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li class="uk-active active">
+                        <a href="../Votations/federales.html">Votations</a>
+                        <div class="uk-navbar-dropdown" style="background-color: #D20603;">
+                            <ul class="uk-nav uk-navbar-dropdown-nav ">
+                                <li class="uk-active"><a href="./federales.html">Fédérales</a></li>
+                                <li><a href="./cantonales.html">Cantonales</a></li>
+                                <li><a href="./communales.html">Communales</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="../Elections/federales.html">Elections</a>
+                        <div class="uk-navbar-dropdown" style="background-color: #D20603;">
+                            <ul class="uk-nav uk-navbar-dropdown-nav ">
+                                <li class="uk-active"><a href="../Elections/federales.html">Fédérales</a></li>
+                                <li><a href="../Elections/cantonales.html">Cantonales</a></li>
+                                <li><a href="../Elections/communales.html">Communales</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="../Résultats/résultats.html">Résultats</a></li>
+                    <li><a href="../Présentations/présentations.html">Présentation</a></li>
+                    <li><a href="../Contact/contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav">
+                    <div class="uk-navbar-item">
+                        <form action="javascript:void(0)">
+                            <input class="uk-input uk-form-width-small" type="text" placeholder="Rechercher...">
+                            <button class="uk-button uk-button-default">🔎</button>
+                        </form>
+=======
     <body>
         <header>
             <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
@@ -62,62 +105,67 @@
                                 </form>
                             </div>
                         </ul>
+>>>>>>> 878878ec0ba6d69dc9ef443647c3ee85cc935b8d
                     </div>
-                
-                    
-                </nav>
+                </ul>
             </div>
-        </header>
-        <main>
-            <section  style="padding: 2%;">
-                <h2 class="uk-heading-large titre roboto">Votations fédérales</h2>
-                <hr>
-                <p class="uk-text-lead">En Suisse, 3 objets fédéraux sont soumis au peuple le 17 mai 2020.</p>
-                <br></br>
-                <div class="uk-child-width-expand" uk-grid>
-                    <div>
-                        <a href="Immigration.html">
-                            <div class="uk-card-small uk-card-primary cards">
-                                <div class="uk-card-media-top div_image">
-                                    <img src="../img/Limitation.jpg" alt="" class="image">
-                                </div>
-                                <div class="uk-card-body">
-                                    <h3 class="uk-card-title roboto">Initiative populaire du 31 août 2018: Pour une immigration modérée (initiative de limitation)</h3>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                <div>
-                        <a href="LIFD.html">
-        
-                            <div class="uk-card-small uk-card-primary cards">
-                                <div class="uk-card-media-top div_image">
-                                    <img src="../img/LIFD.png" alt="" class="image">
-                                </div>
-                                <div class="uk-card-body">
-                                    <h3 class="uk-card-title roboto"> Modification du 27 septembre 2019 de la loi fédérale sur l’impôt direct (Déduction fiscale des frais de garde des enfants par des tiers) </h3>
-                                </div>
-                            </div>
-        
-                        </a>
-                    </div>
-                <div>
-                    <a href="Chasse.html">
-    
-                        <div class="uk-card-small uk-card-primary cards">
-                            <div class="uk-card-media-top div_image">
-                                <img src="../img/Chasse" alt="" class="image">
-                            </div>
-                            <div class="uk-card-body">
-                                <h3 class="uk-card-title roboto">Modification du 27 septembre 2019 de la loi fédérale sur la chasse et la protection des mammifères et oiseaux sauvages</h3>
-                            </div>
+
+
+        </nav>
+    </div>
+</header>
+<main>
+    <section style="padding: 2%;">
+        <h2 class="uk-heading-large titre roboto">Votations fédérales</h2>
+        <hr>
+        <p class="uk-text-lead">En Suisse, 3 objets fédéraux sont soumis au peuple le 17 mai 2020.</p>
+        <br></br>
+        <div class="uk-child-width-expand" uk-grid>
+            <div>
+                <a href="federales/Immigration.html">
+                    <div class="uk-card-small uk-card-primary cards">
+                        <div class="uk-card-media-top div_image">
+                            <img src="../img/Limitation.jpg" alt="" class="image">
                         </div>
-    
-                    </a>
-                </div>
-                </div>
-            </div>       
-            </section>
-        </main>
-    </body>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title roboto">Initiative populaire du 31 août 2018: Pour une immigration
+                                modérée (initiative de limitation)</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="federales/LIFD.html">
+
+                    <div class="uk-card-small uk-card-primary cards">
+                        <div class="uk-card-media-top div_image">
+                            <img src="../img/LIFD.png" alt="" class="image">
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title roboto"> Modification du 27 septembre 2019 de la loi fédérale sur
+                                l’impôt direct (Déduction fiscale des frais de garde des enfants par des tiers) </h3>
+                        </div>
+                    </div>
+
+                </a>
+            </div>
+            <div>
+                <a href="federales/Chasse.html">
+
+                    <div class="uk-card-small uk-card-primary cards">
+                        <div class="uk-card-media-top div_image">
+                            <img src="../img/Chasse" alt="" class="image">
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title roboto">Modification du 27 septembre 2019 de la loi fédérale sur la
+                                chasse et la protection des mammifères et oiseaux sauvages</h3>
+                        </div>
+                    </div>
+
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+</body>
 </html>
