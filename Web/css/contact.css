@@ -85,3 +85,15 @@ a {
 .uk-navbar-dropdown-nav > li.uk-active > a {
     color: #fff;
 }
+
+.descriptionprojet{
+    height:225px;
+}
+
+.titreprojet{
+    height:50px;
+}
+
+.carteréseaux{
+    height:50px;
+}
