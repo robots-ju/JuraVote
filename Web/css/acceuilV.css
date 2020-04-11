@@ -2,29 +2,28 @@ a {
     text-decoration: none !important;
 }
 
+.imageParti{
+    height:80px;
+}
+
 .titre {
     color: #990000;
     text-align: center;
 }
 
+
 .uk-card-title{
     color: white !important;
     font-size: xx-large;
 }
-
-.uk-card-body{
-    text-align: center;
-    font-size: x-large;
-    padding: 46px 46px;
+.uk-card-header{
+    color: white;
 }
+
 .uk-card{
-    width:74%;
-    color: #6D7275;
-    margin-left: 13.5%;
-    
+    width:100%;
+    color: white;
 }
-
-
 
 .uk-text-meta {
     color: black;
@@ -82,16 +81,4 @@ a {
 
 .uk-navbar-dropdown-nav > li.uk-active > a {
     color: #fff;
-}
-
-.descriptionprojet{
-    height:225px;
-}
-
-.titreprojet{
-    height:50px;
-}
-
-.carteréseaux{
-    height:50px;
 }
