@@ -13,6 +13,13 @@ a {
     background-color: #990000;
     text-decoration: none;
 }
+.uk-card-body{
+    color: black;
+    padding: 15px 25px;
+}
+.uk-text-meta{
+    text-align: right;
+}
 
 .cards:hover {
     opacity: 75%;
