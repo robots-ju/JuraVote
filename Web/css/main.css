@@ -4,6 +4,21 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.uk-heading-large {
+    color: #990000 ;
+    text-align: center;
+}
+
+.uk-card-title-center {
+    text-align: center;
+}
+
+.uk-margin-remove-top {
+    text-align: center;
+}
+
+
+
 .montserrat {
     font-family: 'Montserrat', sans-serif;
 }
