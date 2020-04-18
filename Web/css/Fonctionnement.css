@@ -1,0 +1,25 @@
+.titre {
+    color: #990000;
+    text-align: center;
+}
+
+.carte {
+    background-color: #990000;
+    color:white;
+}
+
+.titrecarte {
+    color:white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+.carte2 {
+    background-color: #FDFFFF;
+}
+.titrecarte2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.4;
+}
