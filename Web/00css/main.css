@@ -42,3 +42,11 @@ main {
     margin-left: 4%;
     margin-right: 4%;
 }
+
+@media only screen
+and (min-width: 2000px) {
+    main {
+        width: 2000px;
+        margin: auto;
+    }
+}
