@@ -1,59 +1,57 @@
 <html>
-    <head>
-            <meta charset="UTF-8">
-            <link rel="shortcut icon" href="../img/Logo/JuraVote.png" />
-            <link rel="stylesheet" href="../00css/normalize.css">
-            <link rel="stylesheet" href="../00css/uikit.min.css" />
-            <link rel="stylesheet" href="../00css/main.css">
-            <script src="../00js/uikit.min.js"></script>
-            <script src="../00js/uikit-icons.min.js"></script>
-            <base target="_parent">
-    </head>
-    <body>
-        <header>
-            <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
-                <nav class="navbar uk-navbar-container uk-light uk-navbar" uk-navbar>
-                    <div class="uk-navbar-left">
-                        <ul class="uk-navbar-nav">
-                            <li id="Accueil"><a href="../01index.html">Accueil</a></li>
-                            <li id="Actualites"><a href="../02Actualites/actualites.html">Actualités</a></li>
-                            <li id="Votations">
-                                <a href="../03Votations/accueilV.html">Votations</a>
-                            </li>
-                            <li id="Elections">
-                                <a href="../04Elections/accueilE.html">Elections</a>
-                            </li>
-                            <li id="Resultats"><a href="../05Resultats/resultats.html">Résultats</a></li>
-                            <li id="Presentations">
-                                <a href="../06Presentations/accueilP.html">Partis politiques</a>
-                            </li>
-                            <li id="Instances">
-                                <a href="../07Instances/accueilI.html">Instances politiques</a>
-                            </li>
-                            <li id="Contact"><a href="../08Contact/contact.html">Contact</a></li>
-                        </ul>
-                    </div>
-                
-                    <div class="uk-navbar-right">
-                        <ul class="uk-navbar-nav">
-                            <div class="uk-navbar-item">
-                                <form action="javascript:void(0)">
-                                    <input class="uk-input uk-form-width-small" type="text" placeholder="Rechercher...">
-                                    <button class="uk-button uk-button-default">🔎</button>
-                                </form>
-                            </div>
-                        </ul>
-                    </div>   
-                </nav>
-            </div>
-        </header>
-        <script>
-            document.location.search.slice(1).split("&").forEach(function(param){
-                if(param.split("=")[0]==="active"){
-                    document.getElementById(param.split("=")[1]).className="uk-active active";
-                }
-            });
-        </script>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../img/Logo/JuraVote.png"/>
+    <link rel="stylesheet" href="../00css/normalize.css">
+    <link rel="stylesheet" href="../00css/uikit.min.css"/>
+    <link rel="stylesheet" href="../00css/main.css">
+    <script src="../00js/uikit.min.js"></script>
+    <script src="../00js/uikit-icons.min.js"></script>
+    <base target="_parent">
+</head>
+<body>
+<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+    <nav class="navbar uk-navbar-container uk-light uk-navbar" uk-navbar>
+        <div class="uk-navbar-left">
+            <ul class="uk-navbar-nav">
+                <li id="Accueil"><a href="../01index.html">Accueil</a></li>
+                <li id="Actualites"><a href="../02Actualites/actualites.html">Actualités</a></li>
+                <li id="Votations">
+                    <a href="../03Votations/accueilV.html">Votations</a>
+                </li>
+                <li id="Elections">
+                    <a href="../04Elections/accueilE.html">Elections</a>
+                </li>
+                <li id="Resultats"><a href="../05Resultats/resultats.html">Résultats</a></li>
+                <li id="Presentations">
+                    <a href="../06Presentations/accueilP.html">Partis politiques</a>
+                </li>
+                <li id="Instances">
+                    <a href="../07Instances/accueilI.html">Instances politiques</a>
+                </li>
+                <li id="Contact"><a href="../08Contact/contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav">
+                <div class="uk-navbar-item">
+                    <form action="javascript:void(0)">
+                        <input class="uk-input uk-form-width-small" type="text" placeholder="Rechercher...">
+                        <button class="uk-button uk-button-default">🔎</button>
+                    </form>
+                </div>
+            </ul>
+        </div>
+    </nav>
+</div>
+<script>
+    document.location.search.slice(1).split("&").forEach(function (param) {
+        if (param.split("=")[0] === "active") {
+            document.getElementById(param.split("=")[1]).className = "uk-active active";
+        }
+    });
+</script>
+</body>
 </html>
         
