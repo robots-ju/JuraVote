@@ -8,12 +8,13 @@ a {
 }
 
 .uk-card-title{
-    color: black;
+    color: white !important;
+    font-size: xx-large;
 }
 
 .uk-card{
-    width:50%;
-    color: #6D7275;
+    width:100%;
+    color: white;
 }
 
 .uk-text-meta {
