@@ -33,7 +33,7 @@
 #navbar-iframe {
     display: block;
     width: 100%;
-    height: 250px;
+    height: 100px;
     position: relative;
     z-index: 2;
 }
