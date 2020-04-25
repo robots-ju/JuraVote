@@ -3,7 +3,13 @@ a {
 }
 
 .image-parti{
-    height:80px;
+    height: 70px;
+    text-align: center;
+}
+
+.image-parti > img {
+    height: 100%;
+    width: 100%;
 }
 
 .titre {
