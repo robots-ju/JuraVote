@@ -1,0 +1,38 @@
+.contenu {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.titre {
+    margin-top: 2%;
+}
+
+.titre-section {
+    color: #990000;
+    text-align: left;
+    padding-bottom: 1%;
+}
+
+.image-presentation {
+    display: block;
+    max-width: 100%;
+    margin: auto;
+}
+
+main {
+    font-size: 1.2rem;
+}
+
+.carte-pour {
+    background-color: #32d296;
+    margin-bottom: 2%;
+}
+
+.carte-contre {
+    background-color: #ec2147;
+    margin-bottom: 2%;
+}
+
+.uk-card {
+    color: white;
+}
