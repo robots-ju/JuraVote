@@ -22,17 +22,3 @@
 main {
     font-size: 1.2rem;
 }
-
-.carte-pour {
-    background-color: #32d296;
-    margin-bottom: 2%;
-}
-
-.carte-contre {
-    background-color: #ec2147;
-    margin-bottom: 2%;
-}
-
-.uk-card {
-    color: white;
-}
