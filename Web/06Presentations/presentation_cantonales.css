@@ -2,8 +2,14 @@ a {
     text-decoration: none !important;
 }
 
-.imageParti{
-    height:80px;
+.image-parti{
+    height: 70px;
+    text-align: center;
+}
+
+.image-parti > img {
+    height: 100%;
+    width: 100%;
 }
 
 .titre {
@@ -64,6 +70,18 @@ a {
     .titre {
         font-size: 2rem;
     }
+}
+
+.uk-card-body{
+    background-color: #990000;
+}
+
+.uk-card-footer {
+    color:black;
+}
+
+.uk-button-text {
+    color:black;
 }
 
 .uk-navbar-dropdown-nav > li > a {
