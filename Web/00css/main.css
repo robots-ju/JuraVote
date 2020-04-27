@@ -28,6 +28,7 @@
 }
 .navbar {
     background-color: #D20603 !important;
+    text-align: center;
 }
 #navbar-iframe {
     display: block;
