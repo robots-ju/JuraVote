@@ -22,3 +22,13 @@ h3 a.titre-carte{
 .logo {
     width: 100%;
 }
+
+
+.uk-grid-small {
+ text-align: center;
+}
+
+.conteneur-cartes {
+    width: 80%;
+    margin: 0 auto;
+}

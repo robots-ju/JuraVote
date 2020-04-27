@@ -1,0 +1,37 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../img/Logo/JuraVote.png"/>
+    <link rel="stylesheet" href="../00css/normalize.css">
+    <link rel="stylesheet" href="../00css/uikit.min.css"/>
+    <link rel="stylesheet" href="../00css/main.css">
+    <script src="../00js/uikit.min.js"></script>
+    <script src="../00js/uikit-icons.min.js"></script>
+    <base target="_parent">
+</head>
+<body>
+
+<footer>
+    <div style="background-color: blue;">
+       <h1>1</h1> 
+    </div>
+    <div style="background-color: green;">
+        <h1>2</h1> 
+     </div>
+     <div style="background-color: rgb(217, 255, 0);">
+        <h1>3</h1> 
+     </div>
+</footer>
+
+
+
+<script>
+    document.location.search.slice(1).split("&").forEach(function (param) {
+        if (param.split("=")[0] === "active") {
+            document.getElementById(param.split("=")[1]).className = "uk-active active";
+        }
+    });
+</script>
+</body>
+</html>
+        
