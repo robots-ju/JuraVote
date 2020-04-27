@@ -22,66 +22,112 @@
     <section style="padding: 2%">
         <h2 class="uk-heading-large titre roboto">Contact </h2>
         <hr>
-        <div class="uk-card uk-card-default uk-width-1-2@m uk-column-1-2">
-            <div class="uk-card-header" style="background-color: #990000;">
-                <div class="uk-grid-small uk-flex-middle" uk-grid>
-                    <div class="uk-width-expand">
-                        <h3 class="uk-card-title uk-margin-remove-bottom titreprojet">Nos réseaux sociaux
-                            @JuraVote:</h3>
+
+
+        <div class="conteneur-cartes">
+            <div class="uk-child-width-1-2@m uk-grid-small uk-grid-match" uk-grid>
+
+    
+                <div>
+                    <div class="uk-card uk-card-default card">
+                        <div class="uk-card-header">
+                            <h3>Nos réseaux sociaux :</h3>
+                        </div>
+                        <div class="uk-card-body">
+                            <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                <div class="uk-width-auto">
+                                    <img class="uk-border-circle" width="50" height="50" src="../img/ResauxSociaux/Twitter-logo.png " alt="Logo Twitter">
+                                </div>
+                                <div class="uk-width-expand">
+                                    <h3 class="uk-card-title uk-margin-remove-bottom montserrat"><a href="https://twitter.com/JuraVote">Twitter</a></h3>
+                                </div>
+                            </div>
+
+                            <hr/>
+
+                            <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                <div class="uk-width-auto">
+                                    <img class="uk-border-circle" width="50" height="50" src="../img/ResauxSociaux/Facebook-Logo.png" alt="Logo Facebook">
+                                </div>
+                                <div class="uk-width-expand">
+                                    <h3 class="uk-card-title uk-margin-remove-bottom montserrat"><a href="https://www.facebook.com/JuraVote2020/">Facebook</a></h3>
+                                </div>
+                            </div>
+                            
+                            <hr/>
+
+                            <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                <div class="uk-width-auto">
+                                    <img class="uk-border-circle" width="50" height="50" src="../img/ResauxSociaux/Instagram-logo.png" alt="Logo Instagram">
+                                </div>
+                                <div class="uk-width-expand">
+                                    <h3 class="uk-card-title uk-margin-remove-bottom montserrat"><a href="https://www.instagram.com/juravote/?hl=fr">Instagram</a></h3>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="uk-card-header" style="background-color: #D20603;">
-                <div class="uk-grid-small uk-flex-middle carteréseaux" uk-grid>
-                    <div class="uk-width-auto">
-                        <img class="uk-border-circle" width="40" height="40"
-                             src="../img/ResauxSociaux/Twitter-logo.png" alt="logo twitter">
-                    </div>
-                    <div class="uk-width-expand">
-                        <a href="https://twitter.com/JuraVote"
-                           class="uk-card-title uk-button uk-button-text uk-margin-remove-bottom" target="_blank">Twitter</a>
-                    </div>
-                </div>
-            </div>
-            <div class="uk-card-header" style="background-color: #D20603;">
-                <div class="uk-grid-small uk-flex-middle carteréseaux" uk-grid>
-                    <div class="uk-width-auto">
-                        <img class="uk-border-circle" width="40" height="40"
-                             src="../img/ResauxSociaux/Facebook-Logo.png" alt="logo Facebook">
-                    </div>
-                    <div class="uk-width-expand">
-                        <a href="https://www.facebook.com/JuraVote2020/"
-                           class="uk-card-title uk-button uk-button-text uk-margin-remove-bottom" target="_blank">Facebook</a>
+
+                <div>
+                    <div class="uk-card uk-card-default card">
+                        <div class="uk-card-header">
+                            <h3>Le projet :</h3>
+                        </div>
+                        <div class="uk-card-body">
+                            <p>
+                                Cette plateforme a été créée par le Groupe Avancé de l’Association Robots-JU. Elle se veut neutre et a pour but d’aider toute personne souhaitant comprendre les votations fédérales suisses, cantonales et communales jurassiennes.
+                            </p>
+                        </div>
                     </div>
                 </div>
+    
+            
             </div>
-            <div class="uk-card-header" style="background-color: #D20603;">
-                <div class="uk-grid-small uk-flex-middle carteréseaux" uk-grid>
-                    <div class="uk-width-auto">
-                        <img class="uk-border-circle" width="40" height="40"
-                             src="../img/ResauxSociaux/Instagram-logo.png" alt="logo Instagram">
-                    </div>
-                    <div class="uk-width-expand">
-                        <a href="https://www.instagram.com/juravote/?hl=fr"
-                           class="uk-card-title uk-button uk-button-text uk-margin-remove-bottom" target="_blank">Instagram</a>
+
+
+
+            <div class="uk-child-width-1-1@m uk-grid-small uk-grid-match" uk-grid>
+
+    
+                <div>
+                    <div class="uk-card uk-card-default card">
+                        <div class="uk-card-header">
+                            <h3>Nous contacter :</h3>
+                        </div>
+                        <div class="uk-card-body">
+                            <form class="uk-grid-small" uk-grid> 
+                                    <div class="uk-width-1-4">
+                                        <input class="uk-input" type="text" id="name" name="user_name" placeholder="Nom">
+                                    </div>
+
+                                    <div class="uk-width-1-4">
+                                        <input class="uk-input" type="text" id="lastname" name="user_lastname" placeholder="Prénom">
+                                    </div>
+                            
+                                    <div class="uk-width-1-1">
+                                        <input class="uk-input" type="email" id="email" name="user_email" placeholder="Votre adresse mail">
+                                    </div>
+                            
+                                    <div class="uk-width-1-1">
+                                        <input class="uk-input" type="text" id="objet" name="user_mail_object" placeholder="Objet du mail">
+                                    </div>
+
+                                    <div class="uk-width-1-1">
+                                        <textarea class="uk-textarea" rows="7" id="message" name="user_msg" placeholder="Votre message"></textarea>
+                                    </div>
+
+                                    <button class="uk-button uk-button-default uk-width-1-1 envoyer" type="submit">Envoyer</button>
+                            </form>                        
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="uk-card-header titreprojet" style="background-color: #990000;">
-                <div class="uk-grid-small uk-flex-middle" uk-grid>
-                    <div class="uk-width-expand">
-                        <h3 class="uk-card-title uk-margin-remove-bottom">Le projet</h3>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="uk-card-body descriptionprojet" style="background-color: #D20603;">
-                <p><b>Cette plateforme a été créée par le Groupe Avancé de l’Association Robots-JU. Elle se veut neutre
-                    et a pour but d’aider toute personne souhaitant comprendre les votations fédérales suisses,
-                    cantonales et communales jurassiennes.</b>
-                </p>
+    
+            
             </div>
         </div>
+
+
+        
     </section>
 </main>
 <footer></footer>
