@@ -12,12 +12,11 @@
 .uk-button-secondary{
     background-color: #990000;
     margin-left: 20%;
-    
-
 }
 
 .description {
-    margin-left: 2%; 
+    margin-left: 2%;
+    color: black;
 }
 
 .description h2, .description p {
