@@ -12,53 +12,13 @@ a {
 }
 
 
-.uk-card-title{
-    color: white !important;
-    font-size: xx-large;
+.uk-grid-small {
+    text-align: center;
 }
-.uk-card-header{
-    color: white;
-}
-
-.uk-card{
-    width:100%;
-    color: white;
-}
-
-.uk-text-meta {
-    color: black;
-}
-
-.uk-card-body{
-    color: white;
-}
-
-.uk-button-text{
-    color: white;
-}
-.cards {
-    height: 100%;
-    color: white;
-    background-color: #990000;
-    text-decoration: none;
-}
-
-.cards:hover {
-    opacity: 75%;
-    transition: 500ms;
-}
-
-.div_image {
-    max-height: 300px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center; 
-}
-
-.image {
-    width:100%;
-    height:300px;
-    margin: auto;
+   
+.conteneur-cartes {
+    width: 50%;
+    margin: 0 auto;
 }
 
 @media (max-width: 500px) {
@@ -69,16 +29,4 @@ a {
     .titre {
         font-size: 2rem;
     }
-}
-
-.uk-navbar-dropdown-nav > li > a {
-    color: rgba(255,255,255,.5);
-}
-
-.uk-navbar-dropdown-nav > li > a:hover{
-    color: rgba(255,255,255,.7);
-}
-
-.uk-navbar-dropdown-nav > li.uk-active > a {
-    color: #fff;
 }
