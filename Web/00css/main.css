@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap');
 
-.roboto {
-    font-family: 'Roboto', sans-serif;
-}
-
 .uk-heading-large {
     color: #990000 ;
     text-align: center;
@@ -21,8 +17,12 @@
     text-align: center;
 }
 
-.montserrat {
-    font-family: 'Montserrat', sans-serif;
+p {
+    font-family: 'Montserrat', sans-serif; !important;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Roboto', sans-serif; !important;
 }
 
 .active {
