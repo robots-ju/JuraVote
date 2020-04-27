@@ -16,3 +16,6 @@
 [0425/133542.128:ERROR:crash_report_database_win.cc(580)] CreateDirectory C:\Program Files (x86)\Hotson\Reports\Dump: Le chemin d’accès spécifié est introuvable. (0x3)
 [0425/133542.155:ERROR:registration_protocol_win.cc(131)] TransactNamedPipe: Le canal de communication a été fermé. (0x6D)
 [0425/133542.156:ERROR:crash_report_database_win.cc(580)] CreateDirectory C:\Program Files (x86)\Hotson\Reports\Dump: Le chemin d’accès spécifié est introuvable. (0x3)
+[0427/190102.558:ERROR:crash_report_database_win.cc(580)] CreateDirectory C:\Program Files (x86)\Hotson\Reports\Dump: Le chemin d’accès spécifié est introuvable. (0x3)
+[0427/190102.568:ERROR:registration_protocol_win.cc(131)] TransactNamedPipe: Le canal de communication a été fermé. (0x6D)
+[0427/190102.570:ERROR:crash_report_database_win.cc(580)] CreateDirectory C:\Program Files (x86)\Hotson\Reports\Dump: Le chemin d’accès spécifié est introuvable. (0x3)
