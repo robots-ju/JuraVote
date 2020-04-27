@@ -23,7 +23,7 @@ a {
     color: white;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 640px) {
     .cards {
         text-align: center;
     }
@@ -31,4 +31,19 @@ a {
     .titre {
         font-size: 2rem;
     }
+
+    .uk-card-body {
+        padding: 20px;
+    }
 }
+
+@media (max-width: 960px) {
+
+    .conteneur-cartes {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+
+
