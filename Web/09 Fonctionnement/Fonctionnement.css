@@ -33,6 +33,10 @@
     .titre {
         font-size: 2rem;
     }
+
+    .uk-card-body {
+        padding: 10px;
+    }
 }
 
 .uk-text-lead {
