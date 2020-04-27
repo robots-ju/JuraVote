@@ -18,8 +18,23 @@
 .carte2 {
     background-color: #FDFFFF;
 }
+
 .titrecarte2 {
     font-size: 1.5rem;
     font-weight: bold;
     line-height: 1.4;
+}
+
+@media (max-width: 500px) {
+    .cards {
+        text-align: center;
+    }
+
+    .titre {
+        font-size: 2rem;
+    }
+}
+
+.uk-text-lead {
+    font-size: 20px;
 }
