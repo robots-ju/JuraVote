@@ -1,0 +1,32 @@
+.photo-personne {
+    border-color: #990000;
+    border-style: solid;
+    border-width: 3px;
+
+    height: 150px;
+    width: 150px;
+}
+
+.text-fonction {
+    font-size: 1.1rem;
+}
+
+.container {
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+@media (max-width: 640px) {
+    .cards {
+        text-align: center;
+    }
+
+    .titre {
+        font-size: 2rem;
+    }
+
+    .container {
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
