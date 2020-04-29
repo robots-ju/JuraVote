@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../img/Logo/JuraVote.png"/> <!-- Mettre le bon chemin vers le fichier -->
+    <title>JuraVote | Résultats Fédérales</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../00css/normalize.css"> <!-- Mettre le bon chemin vers le fichier -->
+    <link rel="stylesheet" href="../00css/uikit.min.css"/> <!-- Mettre le bon chemin vers le fichier -->
+    <script src="../00js/uikit.min.js"></script> <!-- Mettre le bon chemin vers le fichier -->
+    <script src="../00js/uikit-icons.min.js"></script> <!-- Mettre le bon chemin vers le fichier -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js" integrity="sha256-TQq84xX6vkwR0Qs1qH5ADkP+MvH0W+9E7TdHJsoIQiM=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css" integrity="sha256-aa0xaJgmK/X74WM224KMQeNQC2xYKwlAt08oZqjeF0E=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../00css/main.css">
+    <link rel="stylesheet" href="../resultats.css">
+    <script src="fédérales.js"></script>
+    <!-- Mettre les styles CSS personnalisés -->
+</head>
+<body>
+<!-- Barre de navigation -->
+<header>
+    <div style="height: 80px;">
+        <iframe src="../01Navigation/navbar.html?active=Resultats" id="navbar-iframe"></iframe>
+        <!-- Mettre le bon chemin vers le fichier -->
+    </div>
+</header>
+<main>
+    <section style="padding: 2%">
+        <h1 class="uk-heading-medium text-rouge-fonce uk-text-center">Résultat des dernières élections fédérales</h1>
+        <hr>
+        <section>
+            <h2 class="text-rouge-fonce uk-text-center">Les résultats seront disponibles lors des prochaines élections fédérales !</h2>
+            <canvas id="canvas-holder" width="400" height="400"></canvas>
+        </section>
+    </section>
+</main>
+<footer>
+    <script>
+
+        var randomScalingFactor = function() {
+            return Math.round(Math.random() * 100);
+        };
+
+        var config = {
+            type: 'doughnut',
+            data: {
+                datasets: [{
+                    data: [
+                        randomScalingFactor(),
+                        randomScalingFactor(),
+                        randomScalingFactor(),
+                        randomScalingFactor(),
+                        randomScalingFactor(),
+                    ],
+                    backgroundColor: [
+                        window.chartColors.red,
+                        window.chartColors.orange,
+                        window.chartColors.yellow,
+                        window.chartColors.green,
+                        window.chartColors.blue,
+                    ],
+                    label: 'Dataset 1'
+                }],
+                labels: [
+                    'Red',
+                    'Orange',
+                    'Yellow',
+                    'Green',
+                    'Blue'
+                ]
+            },
+            options: {
+                responsive: true,
+                legend: {
+                    position: 'top',
+                },
+                title: {
+                    display: true,
+                    text: 'Chart.js Doughnut Chart'
+                },
+                animation: {
+                    animateScale: true,
+                    animateRotate: true
+                }
+            }
+        };
+
+        window.onload = function() {
+            var ctx = document.getElementById('chart-area').getContext('2d');
+            window.myDoughnut = new Chart(ctx, config);
+        };
+
+        document.getElementById('randomizeData').addEventListener('click', function() {
+            config.data.datasets.forEach(function(dataset) {
+                dataset.data = dataset.data.map(function() {
+                    return randomScalingFactor();
+                });
+            });
+
+            window.myDoughnut.update();
+        });
+
+        var colorNames = Object.keys(window.chartColors);
+        document.getElementById('addDataset').addEventListener('click', function() {
+            var newDataset = {
+                backgroundColor: [],
+                data: [],
+                label: 'New dataset ' + config.data.datasets.length,
+            };
+
+            for (var index = 0; index < config.data.labels.length; ++index) {
+                newDataset.data.push(randomScalingFactor());
+
+                var colorName = colorNames[index % colorNames.length];
+                var newColor = window.chartColors[colorName];
+                newDataset.backgroundColor.push(newColor);
+            }
+
+            config.data.datasets.push(newDataset);
+            window.myDoughnut.update();
+        });
+
+        document.getElementById('addData').addEventListener('click', function() {
+            if (config.data.datasets.length > 0) {
+                config.data.labels.push('data #' + config.data.labels.length);
+
+                var colorName = colorNames[config.data.datasets[0].data.length % colorNames.length];
+                var newColor = window.chartColors[colorName];
+
+                config.data.datasets.forEach(function(dataset) {
+                    dataset.data.push(randomScalingFactor());
+                    dataset.backgroundColor.push(newColor);
+                });
+
+                window.myDoughnut.update();
+            }
+        });
+
+        document.getElementById('removeDataset').addEventListener('click', function() {
+            config.data.datasets.splice(0, 1);
+            window.myDoughnut.update();
+        });
+
+        document.getElementById('removeData').addEventListener('click', function() {
+            config.data.labels.splice(-1, 1); // remove the label first
+
+            config.data.datasets.forEach(function(dataset) {
+                dataset.data.pop();
+                dataset.backgroundColor.pop();
+            });
+
+            window.myDoughnut.update();
+        });
+
+        document.getElementById('changeCircleSize').addEventListener('click', function() {
+            if (window.myDoughnut.options.circumference === Math.PI) {
+                window.myDoughnut.options.circumference = 2 * Math.PI;
+                window.myDoughnut.options.rotation = -Math.PI / 2;
+            } else {
+                window.myDoughnut.options.circumference = Math.PI;
+                window.myDoughnut.options.rotation = -Math.PI;
+            }
+
+            window.myDoughnut.update();
+        });
+
+    </script>
+</footer>
+</body>
+</html>
