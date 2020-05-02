@@ -6,3 +6,19 @@
 .uk-light .uk-navbar-nav > li > a {
     color: white;
 }
+
+.uk-light .uk-navbar-nav > li {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.uk-navbar-container:not(.uk-navbar-transparent) {
+background-color: #D20603;
+text-align: center;
+}
+
+.active {
+    background-color: #990000;
+}
