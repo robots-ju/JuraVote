@@ -1,0 +1,8 @@
+.uk-offcanvas-bar .uk-nav-default > li > a,
+.uk-offcanvas-bar .uk-nav-default > li > a:hover {
+    color: white;
+}
+
+.uk-light .uk-navbar-nav > li > a {
+    color: white;
+}

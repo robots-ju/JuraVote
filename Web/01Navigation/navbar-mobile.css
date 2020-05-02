@@ -1,0 +1,19 @@
+nav.uk-navbar-container:not(.uk-navbar-transparent) {
+    background-color: #D20603;
+}
+
+.uk-navbar-toggle,
+.uk-navbar-toggle:hover {
+    color: white;
+}
+
+.uk-offcanvas-bar {
+    background-color: #D20603;
+    border-right: white solid 1px;
+}
+
+.uk-offcanvas-bar .uk-nav-default > li > a,
+.uk-offcanvas-bar .uk-nav-default > li > a:hover {
+    color: white;
+}
+
