@@ -6,8 +6,11 @@
     height: 25%;
 }
 
+.description {
+    padding: 10px;
+}
+
 .logo {
-    height: 225px;
     border-color: #990000;
     border-style: solid;
     border-width: 5px;
