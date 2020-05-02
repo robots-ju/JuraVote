@@ -2,6 +2,11 @@ a {
     text-decoration: none !important;
 }
 
+.conteneur-cartes {
+    width: 60%;
+    margin: 0 auto;
+}
+
 .titre {
     color: #990000;
     text-align: center;
