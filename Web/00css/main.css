@@ -17,7 +17,7 @@
     text-align: center;
 }
 
-p, {
+p{
     font-family: 'Montserrat', sans-serif !important;
 }
 
@@ -66,10 +66,16 @@ and (min-width: 2000px) {
     display: none;
 }
 
+.navbar-mobile {
+    z-index: 1000;
+    t
+}
+
 @media only screen
 and (min-width: 1600px) {
     .navbar-normal {
         display: initial;
+        z-index: 1000;
     }
 
     .navbar-mobile {
