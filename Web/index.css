@@ -1,20 +1,44 @@
-.entete {
-
+main {
     display: flex;
     flex-direction: row;
-    padding: 2%;
-    height: 25%;
+    overflow: hidden;
 }
 
-.description {
-    padding: 10px;
+.entete {
+    display: flex;
+    flex-direction: row;
+}
+
+.image {
+    margin: 0 auto;
+}
+
+.logo {
+    border-style: solid;
+    border-color: #990000;
+    border-width: 5px;
+}
+
+.page {
+    padding-top: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+}
+
+.bienvenue {
+    width: 100%;
+}
+
+.nav_rapide {
+    width:100%;
+
 }
 
 .uk-button-secondary {
     background-color: #D20603;
 }
 
-.description h2, .description p {
-    color: black;
-}
 
+.twitter {
+    padding-top: 2%;
+}
