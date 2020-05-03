@@ -11,6 +11,11 @@
     <link rel="stylesheet" href="./contact.css">
     <script src="../00js/uikit.min.js"></script>
     <script src="../00js/uikit-icons.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!--<script src ="contact.js"></script>-->
+
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </head>
 <body>
 <header>
@@ -105,13 +110,13 @@
                             <form>
                                 <div class="uk-grid-small" uk-grid>
                                     <div class="uk-width-1-4">
-                                        <input class="uk-input" type="text" id="name" name="user_name"
+                                        <input class="uk-input" type="text" id="lastname" name="user_lastname"
                                                placeholder="Nom">
                                     </div>
 
                                     <div class="uk-width-1-4">
-                                        <input class="uk-input" type="text" id="lastname" name="user_lastname"
-                                               placeholder="Prénom">
+                                        <input class="uk-input" type="text" id="firstname" name="user_firstname"
+                                               placeholder="Prénom" value="caca">
                                     </div>
 
                                     <div class="uk-width-1-1">
@@ -120,7 +125,7 @@
                                     </div>
 
                                     <div class="uk-width-1-1">
-                                        <input class="uk-input" type="text" id="objet" name="user_mail_object"
+                                        <input class="uk-input" type="text" id="object" name="user_mail_object"
                                                placeholder="Objet du mail">
                                     </div>
 
@@ -129,17 +134,13 @@
                                                   placeholder="Votre message"></textarea>
                                     </div>
                                 </div>
-                                <div>
-                                    <button class="uk-button uk-button-default envoyer uk-width-expand uk-margin-top" type="submit">Envoyer</button>
-                                </div>
-
-                                    
-                            </form>                        
+                            </form>
+                            <div>
+                                <button onclick="submitForm()" class="uk-button uk-button-default envoyer uk-width-expand uk-margin-top">Envoyer</button>
+                            </div>                        
                         </div>
                     </div>
                 </div>
-
-
             </div>
         </div>
 
@@ -149,3 +150,24 @@
 <footer></footer>
 </body>
 </html>
+
+<script>
+    
+let submitForm = () => {
+    let lastName = document.getElementById("lastname").value;
+    let firstName = document.getElementById("firstname").value;
+    let userMail = document.getElementById("email").value;
+    let mailObject = document.getElementById("object").value;
+    let message = document.getElementById("message").value
+
+    Email.send({
+        SecureToken : "69a0fda4-aded-406f-96bb-afd09d2e5fbd",
+        To : 'juravote@gmail.com',
+        From : "juravote@gmail.com",
+        Subject : mailObject + " - " + userMail,
+        Body : "Formulaire : \n \n Nom :" + lastname + "\n Prénom : " + firstname + "\n Adresse mail : " + userMail + "\n \n Objet : " + mailObject + "\n" + message
+    }).then(
+      message => alert("votre mail à bien été envoyé")
+    );
+}
+</script>
