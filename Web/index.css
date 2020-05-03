@@ -10,16 +10,11 @@
     padding: 10px;
 }
 
-.logo {
-    border-color: #990000;
-    border-style: solid;
-    border-width: 5px;
-}
-
 .uk-button-secondary {
-    background-color: #990000;
+    background-color: #D20603;
 }
 
 .description h2, .description p {
     color: black;
 }
+
