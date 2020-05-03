@@ -68,3 +68,18 @@ and (min-width: 2000px) {
         margin: auto;
     }
 }
+
+.navbar-normal {
+    display: none;
+}
+
+@media only screen
+and (min-width: 1600px) {
+    .navbar-normal {
+        display: initial;
+    }
+
+    .navbar-mobile {
+        display: none;
+    }
+}
