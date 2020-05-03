@@ -25,3 +25,9 @@
 .text-fonction {
     font-size: 1.1rem;
 }
+
+.conteneur_cartes
+{
+    width: 80%;
+    margin: 0 auto;
+}
