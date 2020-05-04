@@ -5,7 +5,7 @@
     <title>JuraVote | Accueil</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../00css/normalize.css">
+    <link rel="stylesheet" href="00css/normalize.css">
     <link rel="stylesheet" href="00css/uikit.min.css"/>
     <link rel="stylesheet" href="index.css"/>
     <link rel="stylesheet" href="00css/main.css"/>
@@ -14,9 +14,13 @@
 </head>
 <body>
     <header>
-        <div style="height: 80px;">
+        <div class="navbar-normal">
             <iframe src="01Navigation/navbar.html?active=Accueil" id="navbar-iframe"></iframe>
         </div>
+        <div class="navbar-mobile">
+            <iframe allowtransparency="true" src="01Navigation/navbar-mobile.html"  scrolling="no" style="height:100%; background: none; position: fixed; width: 100%; z-index: 1000;"></iframe>
+        </div>
+
     </header>
     <main>
         <div class="uk-grid" uk-grid>
