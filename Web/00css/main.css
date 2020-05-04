@@ -37,6 +37,7 @@ h1, h2, h3, h4, h5, a {
 html{
     background-color: #F5F5F5;
     height: 100%;
+
 }
 
 footer {
@@ -52,6 +53,7 @@ footer > div {
 main {
     margin-left: 4%;
     margin-right: 4%;
+    padding-top: 125px;
 }
 
 @media only screen
@@ -68,17 +70,20 @@ and (min-width: 2000px) {
 
 .navbar-mobile {
     z-index: 1000;
-    t
 }
 
 @media only screen
 and (min-width: 1600px) {
     .navbar-normal {
-        display: initial;
-        z-index: 1000;
+        display: block;
+        height: 80px;
     }
 
     .navbar-mobile {
         display: none;
+    }
+
+    main {
+        padding-top: 0;
     }
 }
