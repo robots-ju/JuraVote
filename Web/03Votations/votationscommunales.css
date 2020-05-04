@@ -12,6 +12,10 @@ a {
     text-align: center;
 }
 
+.uk-grid-small {
+    text-align: center;
+   }
+
 .cards {
     height: 100%;
     color: white;
