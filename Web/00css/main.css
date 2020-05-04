@@ -51,17 +51,10 @@ footer > div {
 }
 
 main {
-    margin-left: 4%;
-    margin-right: 4%;
-    padding-top: 125px;
-}
-
-@media only screen
-and (min-width: 2000px) {
-    main {
-        width: 2000px;
-        margin: auto;
-    }
+    max-width: 2000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 95px;
 }
 
 .navbar-normal {
@@ -70,6 +63,8 @@ and (min-width: 2000px) {
 
 .navbar-mobile {
     z-index: 1000;
+    width: 100%;
+    position: absolute;
 }
 
 @media only screen
@@ -86,4 +81,26 @@ and (min-width: 1600px) {
     main {
         padding-top: 0;
     }
+}
+
+/*********************/
+/****NAVBAR-MOBILE****/
+/*********************/
+nav.uk-navbar-container:not(.uk-navbar-transparent) {
+    background-color: #D20603;
+}
+
+.uk-navbar-toggle,
+.uk-navbar-toggle:hover {
+    color: white;
+}
+
+.uk-offcanvas-bar {
+    background-color: #D20603;
+    border-right: white solid 1px;
+}
+
+.uk-offcanvas-bar .uk-nav-default > li > a,
+.uk-offcanvas-bar .uk-nav-default > li > a:hover {
+    color: white;
 }

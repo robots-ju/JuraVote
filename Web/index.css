@@ -22,12 +22,6 @@ main {
     border-width: 5px;
 }
 
-.page {
-    padding-top: 2%;
-    padding-right: 2%;
-    padding-bottom: 2%;
-}
-
 .bienvenue {
     width: 100%;
 }
@@ -43,9 +37,4 @@ main {
 
 .uk-button-secondary:hover {
     background-color: #990000;
-}
-
-
-.twitter {
-    padding-top: 2%;
 }

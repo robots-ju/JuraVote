@@ -11,79 +11,133 @@
     <link rel="stylesheet" href="00css/main.css"/>
     <script src="00js/uikit.min.js"></script>
     <script src="00js/uikit-icons.min.js"></script>
+    <script>
+        function resizeIframe(obj) {
+            obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+        }
+    </script>
 </head>
 <body>
-    <header>
-        <div class="navbar-normal">
-            <iframe src="01Navigation/navbar.html?active=Accueil" id="navbar-iframe"></iframe>
+<header>
+    <div class="navbar-normal">
+        <iframe src="01Navigation/navbar.html?active=Accueil" id="navbar-iframe"></iframe>
+    </div>
+    <nav class="uk-navbar uk-navbar-container navbar-mobile">
+        <div class="uk-navbar-left">
+            <a class="uk-navbar-toggle uk-button uk-button-text" href="#menu-mobile" uk-toggle>
+                <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span>
+            </a>
         </div>
-        <div class="navbar-mobile">
-            <iframe allowtransparency="true" src="01Navigation/navbar-mobile.html"  scrolling="no" style="height:100%; background: none; position: fixed; width: 100%; z-index: 1000;"></iframe>
+    </nav>
+    <div id="menu-mobile" uk-offcanvas>
+        <div class="uk-offcanvas-bar">
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+            <ul class="uk-nav uk-nav-default uk-list uk-list-divider">
+                <li id="Accueil">
+                    <a class="uk-button uk-button-text" href="./index.html">Accueil</a></li>
+                <li id="Actualites">
+                    <a class="uk-button uk-button-text" href="./02Actualites/actualites.html">Actualités</a></li>
+                <li id="Votations">
+                    <a class="uk-button uk-button-text" href="./03Votations/accueilV.html">Prochaines votations</a>
+                </li>
+                <li id="Elections">
+                    <a class="uk-button uk-button-text" href="./04Elections/accueilE.html">Prochaines élections</a>
+                </li>
+                <li id="Resultats">
+                    <a class="uk-button uk-button-text" href="./05Resultats/resultats.html">Derniers résultats</a></li>
+                <li id="Presentations">
+                    <a class="uk-button uk-button-text" href="./06Presentations/accueilP.html">Partis politiques</a>
+                </li>
+                <li id="Instances">
+                    <a class="uk-button uk-button-text" href="./07Instances/accueilI.html">Instances politiques</a>
+                </li>
+                <li id="fonctionnement">
+                    <a class="uk-button uk-button-text" href="./09Fonctionnement/fonctionnement.html">La politique en
+                        Suisse</a></li>
+                <li id="archives">
+                    <a class="uk-button uk-button-text" href="./10Archives/Archives.html">Archives</a></li>
+                <li id="Contact">
+                    <a class="uk-button uk-button-text" href="./08Contact/contact.html">Contact</a></li>
+                <li><a class="uk-button uk-button-tex" href="https://twitter.com/JuraVote/" target="_blank"
+                       uk-icon="icon: twitter; ratio: 1.2"></a></li>
+                <li><a class="uk-button uk-button-tex" href="https://www.instagram.com/juravote/?hl=fr" target="_blank"
+                       uk-icon="icon: instagram; ratio: 1.2"></a></li>
+                <li><a class="uk-button uk-button-tex" href="https://www.facebook.com/JuraVote2020/" target="_blank"
+                       uk-icon="icon: facebook; ratio: 1.2"></a></li>
+            </ul>
         </div>
-
-    </header>
-    <main>
+    </div>
+</header>
+<main>
+    <section style="padding: 2%">
         <div class="uk-grid" uk-grid>
             <section class="page uk-width-expand@m">
 
                 <div class="uk-grid entete" uk-grid>
                     <div class="image">
                         <div class="uk-margin-auto">
-                            <img class="logo" src="img/Logo/JuraVote/Logo.png" width="200" height="200" alt="Logo JuraVote">
+                            <img class="logo" src="img/Logo/JuraVote/Logo.png" width="200" height="200"
+                                 alt="Logo JuraVote">
                         </div>
                     </div>
                     <div class="bienvenue">
                         <div class="description uk-margin-auto">
                             <h2>Bienvenue sur Juravote !</h2>
-                            <p>Nous vous souhaitons une agréable visite et restons à disposition pour toute remarque ou idée d'amélioration par <a href="08Contact/contact.html">le formulaire de contact.</a></p>  
+                            <p>Nous vous souhaitons une agréable visite et restons à disposition pour toute remarque ou
+                                idée d'amélioration par <a href="08Contact/contact.html">le formulaire de contact.</a>
+                            </p>
                         </div>
                     </div>
-                    
+
                 </div>
 
                 <hr>
-                
+
                 <div class="nav_rapide">
                     <h2>Navigation rapide</h2>
                     <div class="uk-child-width-1-1 uk-child-width-1-2@m uk-child-width-1-4@xl uk-grid-small" uk-grid>
                         <div><a href="./02Actualites/actualites.html">
-                            <button class="uk-width-expand uk-button uk-button-secondary uk-button-large"><b>Dernières actualités</b></button>
+                            <button class="uk-width-expand uk-button uk-button-secondary uk-button-large"><b>Dernières
+                                actualités</b></button>
                         </a></div>
                         <div><a href="./08Contact/contact.html">
-                            <button class="uk-width-expand uk-button uk-button-secondary uk-button-large"><b>Nous contacter</b></button>
+                            <button class="uk-width-expand uk-button uk-button-secondary uk-button-large"><b>Nous
+                                contacter</b></button>
                         </a></div>
                         <div><a href="./05Resultats/resultats.html">
-                            <button class="uk-width-expand uk-button uk-button-secondary uk-button-large"><b>Derniers résulats</b></button>
+                            <button class="uk-width-expand uk-button uk-button-secondary uk-button-large"><b>Derniers
+                                résulats</b></button>
                         </a></div>
                         <div><a href="./10Archives/Archives.html">
-                            <button class="uk-width-expand uk-button uk-button-secondary uk-button-large"><b>Résultats - archives</b></button>
+                            <button class="uk-width-expand uk-button uk-button-secondary uk-button-large"><b>Résultats -
+                                archives</b></button>
                         </a></div>
                     </div>
                 </div>
-                
+
                 <hr>
-    
+
                 <div class="calendrier">
                     <h2>Calendrier</h2>
                     <table class="calendrier uk-table-striped uk-table uk-table-justify uk-table-divider">
                         <thead>
-                            <tr>
-                                <th class="uk-width-small">Dates</th>
-                                <th class="uk-width-medium">Objet</th>
-                                <th class="uk-width-small">Lire plus...</th>
-                            </tr>
+                        <tr>
+                            <th class="uk-width-small">Dates</th>
+                            <th class="uk-width-medium">Objet</th>
+                            <th class="uk-width-small">Lire plus...</th>
+                        </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>xx.xx 2020</td>
-                                <td>Elections communales - Beurnevésin</td>
-                                <td><a class="uk-link-muted" href="#">A venir</a></td>
-                            </tr>
-                            <tr>
-                                <td>xx.xx 2020</td>
-                                <td>Election communale - Bonfol</td>
-                                <td><a class="uk-link-muted" href="#">A venir</a></td>
-                            </tr>
+                        <tr>
+                            <td>xx.xx 2020</td>
+                            <td>Elections communales - Beurnevésin</td>
+                            <td><a class="uk-link-muted" href="#">A venir</a></td>
+                        </tr>
+                        <tr>
+                            <td>xx.xx 2020</td>
+                            <td>Election communale - Bonfol</td>
+                            <td><a class="uk-link-muted" href="#">A venir</a></td>
+                        </tr>
                             <tr>
                                 <td>xx.xx 2020</td>
                                 <td>Election communale - Courtételle</td>
@@ -119,21 +173,21 @@
                                 <td>Elections cantonales (Jura ; 1er tour)</td>
                                 <td><a class="uk-link-muted" href="#">A venir</a></td>
                             </tr>
-                            <tr>
-                                <td>08 novembre 2020</td>
-                                <td>Elections cantonales (Jura ; 2e tour)</td>
-                                <td><a class="uk-link-muted" href="#">A venir</a></td>
-                            </tr>
-                            <tr>
-                                <td>29 novembre 2020</td>
-                                <td>Votations fédérales</td>
-                                <td><a class="uk-link-muted" href="#">A venir</a></td>
-                            </tr>
+                        <tr>
+                            <td>08 novembre 2020</td>
+                            <td>Elections cantonales (Jura ; 2e tour)</td>
+                            <td><a class="uk-link-muted" href="#">A venir</a></td>
+                        </tr>
+                        <tr>
+                            <td>29 novembre 2020</td>
+                            <td>Votations fédérales</td>
+                            <td><a class="uk-link-muted" href="#">A venir</a></td>
+                        </tr>
                         </tbody>
                     </table>
                 </div>
             </section>
-    
+
             <aside class="twitter uk-width-1-4@xl">
                 <div class="uk-align-right" style="display:inline-block; width: 100%; height:max-content;">
                     <h2>Fil d'actualité Twitter</h2>
@@ -144,6 +198,7 @@
                 </div>
             </aside>
         </div>
+    </section>
     </main>
 </body>
 <footer>
