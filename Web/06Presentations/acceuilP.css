@@ -15,11 +15,6 @@ a {
 .uk-grid-small {
     text-align: center;
 }
-   
-.conteneur-cartes {
-    width: 60%;
-    margin: 0 auto;
-}
 
 @media (max-width: 500px) {
     .cards {
