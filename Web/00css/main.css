@@ -64,7 +64,7 @@ main {
 .navbar-mobile {
     z-index: 1000;
     width: 100%;
-    position: absolute;
+    position: fixed;
 }
 
 @media only screen
@@ -80,6 +80,13 @@ and (min-width: 1600px) {
 
     main {
         padding-top: 0;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .titre {
+        font-size: 2rem;
     }
 }
 
