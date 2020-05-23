@@ -1,0 +1,32 @@
+.contenu {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.titre {
+    margin-top: 2%;
+}
+
+.titre-section {
+    color: #990000;
+    text-align: left;
+    padding-bottom: 1%;
+}
+
+.image-presentation {
+    display: block;
+    max-width: 100%;
+    margin: auto;
+}
+
+main {
+    font-size: 1.2rem;
+}
+
+.pour {
+    color: #27ae60;
+}
+
+.contre {
+    color: #D20603;
+}

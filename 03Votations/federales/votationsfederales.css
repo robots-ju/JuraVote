@@ -1,0 +1,24 @@
+.titre {
+    color: #990000;
+    text-align: center;
+}
+
+.cards {
+    height: 100%;
+    color: white;
+    background-color: #990000;
+}
+
+.cards:hover {
+    opacity: 75%;
+    transition: 500ms;
+}
+@media (max-width: 500px) {
+    .cards {
+        text-align: center;
+    }
+
+    .titre {
+        font-size: 2rem;
+    }
+}

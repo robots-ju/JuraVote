@@ -1,0 +1,103 @@
+                            //Create data series
+                            var série0to10 = resultatsEnergieCH.series.push(new am4maps.MapPolygonSeries());
+                            série0to10.name = "0 à 10 %";
+                            série0to10.value = "0 à 10 %";
+                            série0to10.title = "Oui en %";
+                            série0to10.useGeodata = true;
+                            série0to10.include = [];
+                            série0to10.mapPolygons.template.tooltipText = "{title} - {name} - {value}";
+                            série0to10.fill = am4core.color("#a00000")
+                            série0to10.mapPolygons.template.fill = am4core.color("#a00000")
+
+                            var série10to20 = resultatsEnergieCH.series.push(new am4maps.MapPolygonSeries());
+                            série10to20.name = "10 à 20 %";
+                            série10to20.value = "10 à 20 %";
+                            série10to20.title = "Oui en %";
+                            série10to20.useGeodata = true;
+                            série10to20.include = [];
+                            série10to20.mapPolygons.template.tooltipText = "{title} - {name} - {value}";
+                            série10to20.fill = am4core.color("#db0000")
+                            série10to20.mapPolygons.template.fill = am4core.color("#db0000")
+
+                            var série20to30 = resultatsEnergieCH.series.push(new am4maps.MapPolygonSeries());
+                            série20to30.name = "20 à 30 %";
+                            série20to30.value = "20 à 30 %";
+                            série20to30.title = "Oui en %";
+                            série20to30.useGeodata = true;
+                            série20to30.include = [];
+                            série20to30.mapPolygons.template.tooltipText = "{title} - {name} - {value}";
+                            série20to30.fill = am4core.color("#ca2f2f")
+                            série20to30.mapPolygons.template.fill = am4core.color("#ca2f2f")
+
+                            var série30to40 = resultatsEnergieCH.series.push(new am4maps.MapPolygonSeries());
+                            série30to40.name = "30 à 40 %";
+                            série30to40.value = "30 à 40 %";
+                            série30to40.title = "Oui en %";
+                            série30to40.useGeodata = true;
+                            série30to40.include = [];
+                            série30to40.mapPolygons.template.tooltipText = "{title} - {name} - {value}";
+                            série30to40.fill = am4core.color("#e74545")
+                            série30to40.mapPolygons.template.fill = am4core.color("#e74545")
+
+                            var série40to50 = resultatsEnergieCH.series.push(new am4maps.MapPolygonSeries());
+                            série40to50.name = "40 à 50 %";
+                            série40to50.value = "40 à 50 %";
+                            série40to50.title = "Oui en %";
+                            série40to50.useGeodata = true;
+                            série40to50.include = [];
+                            série40to50.mapPolygons.template.tooltipText = "{title} - {name} - {value}";
+                            série40to50.fill = am4core.color("#fd7272")
+                            série40to50.mapPolygons.template.fill = am4core.color("#fd7272")
+
+                            var série50to60 = resultatsEnergieCH.series.push(new am4maps.MapPolygonSeries());
+                            série50to60.name = "50 à 60 %";
+                            série50to60.value = "50 à 60 %";
+                            série50to60.title = "Oui en %";
+                            série50to60.useGeodata = true;
+                            série50to60.include = [];
+                            série50to60.mapPolygons.template.tooltipText = "{title} - {name} - {value}";
+                            série50to60.fill = am4core.color("#88e56f")
+                            série50to60.mapPolygons.template.fill = am4core.color("#88e56f")
+
+                            var série60to70 = resultatsEnergieCH.series.push(new am4maps.MapPolygonSeries());
+                            série60to70.name = "60 à 70 %";
+                            série60to70.value = "60 à 70 %";
+                            série60to70.title = "Oui en %";
+                            série60to70.useGeodata = true;
+                            série60to70.include = [];
+                            série60to70.mapPolygons.template.tooltipText = "{title} - {name} - {value}";
+                            série60to70.fill = am4core.color("#63cf46")
+                            série60to70.mapPolygons.template.fill = am4core.color("#63cf46")
+
+                            var série70to80 = resultatsEnergieCH.series.push(new am4maps.MapPolygonSeries());
+                            série70to80.name = "70 à 80 %";
+                            série70to80.value = "70 à 80 %";
+                            série70to80.title = "Oui en %";
+                            série70to80.useGeodata = true;
+                            série70to80.include = [];
+                            série70to80.mapPolygons.template.tooltipText = "{title} - {name} - {value}";
+                            série70to80.fill = am4core.color("#42c121")
+                            série70to80.mapPolygons.template.fill = am4core.color("#42c121")
+
+                            var série80to90 = resultatsEnergieCH.series.push(new am4maps.MapPolygonSeries());
+                            série80to90.name = "80 à 90 %";
+                            série80to90.value = "80 à 90 %";
+                            série80to90.title = "Oui en %";
+                            série80to90.useGeodata = true;
+                            série80to90.include = [];
+                            série80to90.mapPolygons.template.tooltipText = "{title} - {name} - {value}";
+                            série80to90.fill = am4core.color("#33d708")
+                            série80to90.mapPolygons.template.fill = am4core.color("#33d708")
+
+                            var série90to100 = resultatsEnergieCH.series.push(new am4maps.MapPolygonSeries());
+                            série90to100.name = "90 à 100 %";
+                            série90to100.value = "90 à 100 %";
+                            série90to100.title = "Oui en %";
+                            série90to100.useGeodata = true;
+                            série90to100.include = [];
+                            série90to100.mapPolygons.template.tooltipText = "{title} - {name} - {value}";
+                            série90to100.fill = am4core.color("#35ff00")
+                            série90to100.mapPolygons.template.fill = am4core.color("#35ff00")
+
+                            resultatsEnergieCH.legend = new am4maps.Legend();
+                            resultatsEnergieCH.legend.position = "left";

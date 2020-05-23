@@ -1,0 +1,53 @@
+a {
+    text-decoration: none !important;
+}
+
+.imageParti{
+    height:80px;
+}
+
+.titre {
+    color: #990000;
+    text-align: center;
+}
+
+.uk-grid-small {
+    text-align: center;
+}
+
+.conteneur-cartes {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.switcher-buttons {
+    text-align: center;
+}
+
+.switcher-buttons button {
+    margin-top: 2%;
+}
+
+
+@media (max-width: 600px) {
+    .cards {
+        text-align: center;
+    }
+
+    .titre {
+        font-size: 2rem;
+    }
+
+    .titre-switcher {
+        font-size: 0.7rem;
+    }
+
+    .chevron-down {
+        height: 50%;
+    }
+}
+
+
+.uk-card-footer {
+    height: 50%;
+}

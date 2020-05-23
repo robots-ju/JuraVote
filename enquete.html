@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="img/Logo/JuraVote/Icon.png" /> <!-- Mettre le bon chemin vers le fichier -->
+    <title>JuraVote | Enquête de mise en ligne</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="00css/normalize.css"> <!-- Mettre le bon chemin vers le fichier -->
+    <link rel="stylesheet" href="00css/uikit.min.css" /> <!-- Mettre le bon chemin vers le fichier -->
+    <script src="00js/uikit.min.js"></script> <!-- Mettre le bon chemin vers le fichier -->
+    <script src="00js/uikit-icons.min.js"></script> <!-- Mettre le bon chemin vers le fichier -->
+    <link rel="stylesheet" href="00css/main.css">
+    <!-- Mettre les styles CSS personnalisés -->
+</head>
+<body>
+<!-- Barre de navigation -->
+<header>
+    <div class="navbar-normal">
+        <iframe src="01Navigation/navbar.html?active=Accueil" id="navbar-iframe"></iframe>
+    </div>
+    <nav class="uk-navbar uk-navbar-container navbar-mobile">
+        <div class="uk-navbar-left">
+            <a class="uk-navbar-toggle uk-button uk-button-text" href="#menu-mobile" uk-toggle>
+                <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span>
+            </a>
+        </div>
+    </nav>
+    <div id="menu-mobile" uk-offcanvas>
+        <div class="uk-offcanvas-bar">
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+            <ul class="uk-nav uk-nav-default uk-list uk-list-divider">
+                <li id="Accueil">
+                    <a class="uk-button uk-button-text" href="index.html">Accueil</a></li>
+                <li id="Votations">
+                    <a class="uk-button uk-button-text" href="03Votations/accueilV.html">Prochaines votations</a>
+                </li>
+                <li id="Resultats">
+                    <a class="uk-button uk-button-text" href="05Resultats/resultats.html">Derniers résultats</a></li>
+                <li id="Instances">
+                    <a class="uk-button uk-button-text" href="07Instances/accueilI.html">Instances politiques</a>
+                </li>
+                <li id="fonctionnement">
+                    <a class="uk-button uk-button-text" href="09Fonctionnement/fonctionnement.html">La politique en
+                        Suisse</a></li>
+                <li id="equipe">
+                    <a class="uk-button uk-button-text" href="11Equipe/equipe.html">L'équipe</a></li>
+                <li><a class="uk-button uk-button-tex" href="https://twitter.com/JuraVote/" target="_blank"
+                       uk-icon="icon: twitter; ratio: 1.2"></a></li>
+                <li><a class="uk-button uk-button-tex" href="https://www.instagram.com/juravote/?hl=fr" target="_blank"
+                       uk-icon="icon: instagram; ratio: 1.2"></a></li>
+                <li><a class="uk-button uk-button-tex" href="https://www.facebook.com/JuraVote2020/" target="_blank"
+                       uk-icon="icon: facebook; ratio: 1.2"></a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+<main>
+    <section style ="padding: 2%; text-align: center">
+        <h2>Juravote - enquête de mise en ligne</h2>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf3Z64cIETI_Q0JLHtvJDwlm2dWdqO0yKlAv0rEqRtX-BXcqA/viewform?embedded=true"
+        width="640" height="2883" frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe>
+    </section>
+</main>
+<footer>
+    <div class="footer">
+        <iframe src="00Footer/footer.html?active=Accueil" id="footer-iframe"></iframe> <!-- Mettre le bon chemin d'acces !!!-->
+    </div>
+</footer>
+</body>
+</html>

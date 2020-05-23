@@ -1,0 +1,18 @@
+.image {
+    margin: 0 auto;
+}
+
+.logo {
+    height: 150px;
+    border-style: solid;
+    border-color: #990000;
+    border-width: 3px;
+}
+
+.uk-button-secondary {
+    background-color: #D20603;
+}
+
+.uk-button-secondary:hover {
+    background-color: #990000;
+}

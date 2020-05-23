@@ -1,0 +1,43 @@
+.palette {
+    color: #FDFFFF #6D7275 #0C120C #D20603 #990000;
+}
+
+footer {
+    background-color: #990000;
+}
+
+footer h3 {
+    color:white;
+}
+
+.nav-rapide {
+    padding: 1%;
+    background-color: #990000;
+}
+
+.nav-rapide p {
+    color: white;
+}
+
+.grid-nav li a {
+    text-align: left;
+    color: white;
+}
+
+.contact {
+    padding: 1%;
+    background-color: #990000;
+}  
+
+.contact p {
+    color: white;
+}
+
+.icon-conteneur {
+    width:100%;
+}
+
+.separateur {
+    width:100%;
+    height: 200px;
+}
